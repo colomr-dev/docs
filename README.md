@@ -1,2 +1,2 @@
 # docs
-Repository for my markdown tech notes
+Repository for my technical notes
