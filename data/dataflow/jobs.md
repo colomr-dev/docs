@@ -4,7 +4,7 @@ description: Jobs process either batch or streaming data
 
 # Jobs
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The easiest way is to create jobs by using predefined templates, but jobs can also be created by custom code with Apache Beam model.
 
