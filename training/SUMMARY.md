@@ -14,7 +14,7 @@
 
 ## 🤖 MLE Certification <a href="#mle" id="mle"></a>
 
-* [Page 1](mle/page-1.md)
+* [AI / ML Path](mle/ai-ml-path.md)
 
 ## 📊 PDE Certification <a href="#pde" id="pde"></a>
 
