@@ -7,9 +7,14 @@
 * [Google Cloud Webminars](https://cloudonair.withgoogle.com/)
 * [Learning & Certification Hub](https://www.googlecloudcommunity.com/gc/Learning-Certification-Hub/ct-p/cloud-learning-cert-forums)
 * [Partner Technical Training](https://www.partneradvantage.goog/GCPPRM/s/trainingoverview)
+* [ML Engineer Learning Path](https://www.cloudskillsboost.google/paths/17)
 * [Iberian Partner Tech Community](https://events.withgoogle.com/iberia-cloud-partner-tech-community/)
 * [Google Cloud Community](https://www.googlecloudcommunity.com/gc/Google-Cloud/ct-p/google-cloud)
 * [Cloud Hub](https://www.googlecloudcommunity.com/gc/Cloud-Hub/bd-p/cloud-hub)
+
+## 🤖 MLE Certification <a href="#mle" id="mle"></a>
+
+* [Page 1](mle/page-1.md)
 
 ## 📊 PDE Certification <a href="#pde" id="pde"></a>
 
