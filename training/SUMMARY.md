@@ -15,6 +15,7 @@
 ## 🤖 MLE Certification <a href="#mle" id="mle"></a>
 
 * [AI / ML Path](mle/ai-ml-path.md)
+* [How Google Does Machine Learning](mle/how-google-does-machine-learning.md)
 
 ## 📊 PDE Certification <a href="#pde" id="pde"></a>
 
