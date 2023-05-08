@@ -15,3 +15,7 @@
 ## 🌐 preventa.tech
 
 * [Install Hugo Framework & Coder Theme](preventa.tech/install-hugo-framework-and-coder-theme.md)
+
+***
+
+* [Python for Analysis](python-for-analysis.md)
