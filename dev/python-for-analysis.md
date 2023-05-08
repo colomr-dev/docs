@@ -13,8 +13,10 @@ description: Python Road-map for Data Engineers
 * Introduction to Python and setting up your development environment.
 * Learn basic syntax, data types, and control structures in Python.
 * Resources:
-  * Python for Everybody by Charles Severance ([https://www.py4e.com/book.php](https://www.py4e.com/book.php))
   * Codecademy's Learn Python 3 ([https://www.codecademy.com/learn/learn-python-3](https://www.codecademy.com/learn/learn-python-3))
+  * Introduction to Python Programming for Data Science: [https://www.youtube.com/watch?v=eykoKxsYz5U](https://www.youtube.com/watch?v=eykoKxsYz5U)
+  * Python for Data Science Tutorial (Full Course): [https://www.youtube.com/watch?v=\_P7X8tMplsw](https://www.youtube.com/watch?v=\_P7X8tMplsw)
+  * Python for Everybody by Charles Severance ([https://www.py4e.com/book.php](https://www.py4e.com/book.php))
 
 #### **Week 2**
 
@@ -23,6 +25,8 @@ description: Python Road-map for Data Engineers
 * Resources:
   * NumPy User Guide ([https://numpy.org/doc/stable/user/index.html](https://numpy.org/doc/stable/user/index.html))
   * Pandas User Guide ([https://pandas.pydata.org/docs/user\_guide/index.html](https://pandas.pydata.org/docs/user\_guide/index.html))
+  * Python Pandas Tutorial (Part 1): Getting Started with Data Analysis - [https://www.youtube.com/watch?v=vmEHCJofslg](https://www.youtube.com/watch?v=vmEHCJofslg)
+  * Python Pandas Tutorial (Part 2): Data Indexing and Selection - [https://www.youtube.com/watch?v=ZyhVh-qRZPA](https://www.youtube.com/watch?v=ZyhVh-qRZPA)
 
 #### **Week 3**
 
@@ -31,6 +35,8 @@ description: Python Road-map for Data Engineers
 * Resources:
   * Data Cleaning in Python by Kevin Markham ([https://www.datacamp.com/courses/cleaning-data-with-python](https://www.datacamp.com/courses/cleaning-data-with-python))
   * Data Visualization with Matplotlib by Kevin Markham ([https://www.datacamp.com/courses/introduction-to-data-visualization-with-matplotlib](https://www.datacamp.com/courses/introduction-to-data-visualization-with-matplotlib))
+  * Matplotlib Crash Course: Python Data Visualization - [https://www.youtube.com/watch?v=ZmYPzESC5YY](https://www.youtube.com/watch?v=ZmYPzESC5YY)
+  * Seaborn Tutorial: Python Data Visualization for Beginners - [https://www.youtube.com/watch?v=6GUZXDef2U0](https://www.youtube.com/watch?v=6GUZXDef2U0)
 
 #### **Week 4**
 
@@ -87,7 +93,7 @@ description: Python Road-map for Data Engineers
 
 * Linear regression
 * Logistic regression
-* k-Nearest Neighbors
+* k-Nearest Neighbours
 
 Resources:
 
