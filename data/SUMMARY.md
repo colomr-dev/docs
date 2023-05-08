@@ -5,6 +5,7 @@
 ## ↗ Resources
 
 * [Apache Beam GitHub Repository](https://github.com/apache/beam/)
+* [Learn SQL](https://www.youtube.com/playlist?list=PLNvMRDyXHRne8qEj3Uipdt4eqkmN1z7bG)
 
 ## 🔧 Tools
 
