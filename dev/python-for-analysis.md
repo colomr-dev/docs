@@ -4,113 +4,84 @@ description: Python Road-map for Data Engineers
 
 # Python for Analysis
 
-## 3-month roadmap & some resources for learning Python for data analysis
+3-month road-map & some resources for learning Python for data analysis
 
 ### **Month 1: Python Basics**
 
-#### Week 1
+#### **Week 1**
 
-* Introduction to Python and setting up your development environment
-* Basic data types and operations
-* Control structures (if/else statements, loops)
+* Introduction to Python and setting up your development environment.
+* Learn basic syntax, data types, and control structures in Python.
+* Resources:
+  * Python for Everybody by Charles Severance ([https://www.py4e.com/book.php](https://www.py4e.com/book.php))
+  * Codecademy's Learn Python 3 ([https://www.codecademy.com/learn/learn-python-3](https://www.codecademy.com/learn/learn-python-3))
 
-Resources:
+#### **Week 2**
 
-* Python official documentation: https://docs.python.org/3/tutorial/
-* Codecademy's Python 3 course: https://www.codecademy.com/learn/learn-python-3
-* Learn Python the Hard Way: https://learnpythonthehardway.org/python3/
+* Learn how to work with data in Python using NumPy and Pandas.
+* Understand data structures, indexing, and slicing.
+* Resources:
+  * NumPy User Guide ([https://numpy.org/doc/stable/user/index.html](https://numpy.org/doc/stable/user/index.html))
+  * Pandas User Guide ([https://pandas.pydata.org/docs/user\_guide/index.html](https://pandas.pydata.org/docs/user\_guide/index.html))
 
-#### Week 2
+#### **Week 3**
 
-* Functions and modules
-* Reading and writing files
-* Exception handling
+* Understand how to manipulate and clean data using Pandas.
+* Learn techniques for data exploration and visualization using Matplotlib.
+* Resources:
+  * Data Cleaning in Python by Kevin Markham ([https://www.datacamp.com/courses/cleaning-data-with-python](https://www.datacamp.com/courses/cleaning-data-with-python))
+  * Data Visualization with Matplotlib by Kevin Markham ([https://www.datacamp.com/courses/introduction-to-data-visualization-with-matplotlib](https://www.datacamp.com/courses/introduction-to-data-visualization-with-matplotlib))
 
-Resources:
+#### **Week 4**
 
-* Python official documentation: https://docs.python.org/3/tutorial/modules.html
-* Real Python's Python Modules and Packages: An Introduction: https://realpython.com/python-modules-packages/
-
-#### Week 3
-
-* Object-oriented programming
-* Classes and objects
-* Inheritance and polymorphism
-
-Resources:
-
-* Python official documentation: https://docs.python.org/3/tutorial/classes.html
-* Real Python's Object-Oriented Programming (OOP) in Python 3: https://realpython.com/python3-object-oriented-programming/
-
-#### Week 4
-
-* Introduction to NumPy
-* Arrays and matrices
-* Indexing and slicing
-
-Resources:
-
-* NumPy official documentation: https://numpy.org/doc/stable/user/quickstart.html
-* NumPy tutorial by SciPy: https://docs.scipy.org/doc/numpy/user/quickstart.html
+* Practice data manipulation and visualization techniques by working on a small project.
+* Use what you've learned to analyze a real-world dataset.
+* Resources:
+  * Kaggle Datasets ([https://www.kaggle.com/datasets](https://www.kaggle.com/datasets))
+  * DataCamp Projects ([https://www.datacamp.com/projects](https://www.datacamp.com/projects))
 
 ### **Month 2: Data Analysis with Pandas**
 
-#### Week 5
+#### **Week 5**
 
-* Introduction to Pandas
-* Series and DataFrames
-* Data selection and indexing
+* Learn how to perform statistical analysis using Python.
+* Understand probability distributions, hypothesis testing, and regression analysis.
+* Resources:
+  * Introduction to Statistical Learning by Gareth James et al. ([https://www.statlearning.com/](https://www.statlearning.com/))
+  * Statistics with Python Specialization by University of Michigan on Coursera ([https://www.coursera.org/specializations/statistics-with-python](https://www.coursera.org/specializations/statistics-with-python))
 
-Resources:
+#### **Week 6**
 
-* Pandas official documentation: https://pandas.pydata.org/docs/getting\_started/index.html
-* DataCamp's Pandas Foundations course: https://www.datacamp.com/courses/pandas-foundations
+* Learn how to work with time series data in Python.
+* Understand time series decomposition, forecasting, and visualization.
+* Resources:
+  * Time Series Analysis in Python by Kevin Markham ([https://www.datacamp.com/courses/time-series-analysis-in-python](https://www.datacamp.com/courses/time-series-analysis-in-python))
+  * Introduction to Time Series Forecasting with Python by Jason Brownlee ([https://machinelearningmastery.com/time-series-forecasting-with-python/](https://machinelearningmastery.com/time-series-forecasting-with-python/))
 
-#### Week 6
+#### **Week 7**
 
-* Data wrangling
-* Data cleaning and preprocessing
-* Merging and joining data
+* Understand machine learning algorithms and how they work.
+* Learn about supervised and unsupervised learning.
+* Resources:
+  * Introduction to Machine Learning with Python by Andreas Müller and Sarah Guido ([https://www.oreilly.com/library/view/introduction-to-machine/9781449369880/](https://www.oreilly.com/library/view/introduction-to-machine/9781449369880/))
+  * Machine Learning Crash Course by Google ([https://developers.google.com/machine-learning/crash-course](https://developers.google.com/machine-learning/crash-course))
 
-Resources:
+#### **Week 8**
 
-* Pandas official documentation: https://pandas.pydata.org/docs/user\_guide/10min.html#reshaping
-* DataCamp's Data Manipulation with pandas course: https://www.datacamp.com/courses/data-manipulation-with-pandas
-
-#### Week 7
-
-* Exploratory data analysis
-* Data visualization with Matplotlib
-* Histograms, scatterplots, and line charts
-
-Resources:
-
-* Matplotlib official documentation: https://matplotlib.org/stable/users/index.html
-* DataCamp's Data Visualization with Matplotlib course: https://www.datacamp.com/courses/introduction-to-data-visualization-with-matplotlib
-
-#### Week 8
-
-* Statistical analysis with Pandas
-* Descriptive statistics
-* Inferential statistics
-
-Resources:
-
-* Pandas official documentation: https://pandas.pydata.org/pandas-docs/stable/user\_guide/computation.html
-* DataCamp's Statistical Thinking in Python course: https://www.datacamp.com/courses/statistical-thinking-in-python-part-1
+* Learn how to apply machine learning algorithms to real-world problems.
+* Understand feature engineering, model selection, and evaluation.
+* Resources:
+  * Applied Machine Learning in Python by Kelleher, Tierney, and Tierney ([https://www.amazon.com/Applied-Machine-Learning-Python-Kelleher/dp/1491960471](https://www.amazon.com/Applied-Machine-Learning-Python-Kelleher/dp/1491960471))
+  * Machine Learning Mastery by Jason Brownlee ([https://machinelearningmastery.com/](https://machinelearningmastery.com/))
 
 ### **Month 3: Machine Learning with Scikit-Learn**
 
-#### Week 9
+#### **Week 9**
 
-* Introduction to Scikit-Learn
-* Model selection and evaluation
-* Overfitting and regularization
-
-Resources:
-
-* Scikit-Learn official documentation: https://scikit-learn.org/stable/getting\_started.html
-* DataCamp's Supervised Learning with Scikit-Learn course: https://www.datacamp.com/courses/supervised-learning-with-scikit-learn
+* Learn how to work with big data using PySpark.
+* Understand Spark architecture, RDDs, and DataFrames.
+* Resources:
+  * Learning PySpark by Tomasz Drabas and Denny Lee ([https://www.amazon.com/Learning](https://www.amazon.com/Learning)
 
 #### Week 10
 
