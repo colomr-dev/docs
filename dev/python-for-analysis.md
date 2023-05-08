@@ -6,9 +6,9 @@ description: Python Road-map for Data Engineers
 
 ## 3-month roadmap & some resources for learning Python for data analysis
 
-**Month 1: Python Basics**
+### **Month 1: Python Basics**
 
-Week 1:
+#### Week 1
 
 * Introduction to Python and setting up your development environment
 * Basic data types and operations
@@ -20,7 +20,7 @@ Resources:
 * Codecademy's Python 3 course: https://www.codecademy.com/learn/learn-python-3
 * Learn Python the Hard Way: https://learnpythonthehardway.org/python3/
 
-Week 2:
+#### Week 2
 
 * Functions and modules
 * Reading and writing files
@@ -31,7 +31,7 @@ Resources:
 * Python official documentation: https://docs.python.org/3/tutorial/modules.html
 * Real Python's Python Modules and Packages: An Introduction: https://realpython.com/python-modules-packages/
 
-Week 3:
+#### Week 3
 
 * Object-oriented programming
 * Classes and objects
@@ -42,7 +42,7 @@ Resources:
 * Python official documentation: https://docs.python.org/3/tutorial/classes.html
 * Real Python's Object-Oriented Programming (OOP) in Python 3: https://realpython.com/python3-object-oriented-programming/
 
-Week 4:
+#### Week 4
 
 * Introduction to NumPy
 * Arrays and matrices
@@ -53,9 +53,9 @@ Resources:
 * NumPy official documentation: https://numpy.org/doc/stable/user/quickstart.html
 * NumPy tutorial by SciPy: https://docs.scipy.org/doc/numpy/user/quickstart.html
 
-**Month 2: Data Analysis with Pandas**
+### **Month 2: Data Analysis with Pandas**
 
-Week 5:
+#### Week 5
 
 * Introduction to Pandas
 * Series and DataFrames
@@ -66,7 +66,7 @@ Resources:
 * Pandas official documentation: https://pandas.pydata.org/docs/getting\_started/index.html
 * DataCamp's Pandas Foundations course: https://www.datacamp.com/courses/pandas-foundations
 
-Week 6:
+#### Week 6
 
 * Data wrangling
 * Data cleaning and preprocessing
@@ -77,7 +77,7 @@ Resources:
 * Pandas official documentation: https://pandas.pydata.org/docs/user\_guide/10min.html#reshaping
 * DataCamp's Data Manipulation with pandas course: https://www.datacamp.com/courses/data-manipulation-with-pandas
 
-Week 7:
+#### Week 7
 
 * Exploratory data analysis
 * Data visualization with Matplotlib
@@ -88,7 +88,7 @@ Resources:
 * Matplotlib official documentation: https://matplotlib.org/stable/users/index.html
 * DataCamp's Data Visualization with Matplotlib course: https://www.datacamp.com/courses/introduction-to-data-visualization-with-matplotlib
 
-Week 8:
+#### Week 8
 
 * Statistical analysis with Pandas
 * Descriptive statistics
@@ -99,9 +99,9 @@ Resources:
 * Pandas official documentation: https://pandas.pydata.org/pandas-docs/stable/user\_guide/computation.html
 * DataCamp's Statistical Thinking in Python course: https://www.datacamp.com/courses/statistical-thinking-in-python-part-1
 
-**Month 3: Machine Learning with Scikit-Learn**
+### **Month 3: Machine Learning with Scikit-Learn**
 
-Week 9:
+#### Week 9
 
 * Introduction to Scikit-Learn
 * Model selection and evaluation
@@ -112,7 +112,7 @@ Resources:
 * Scikit-Learn official documentation: https://scikit-learn.org/stable/getting\_started.html
 * DataCamp's Supervised Learning with Scikit-Learn course: https://www.datacamp.com/courses/supervised-learning-with-scikit-learn
 
-Week 10:
+#### Week 10
 
 * Linear regression
 * Logistic regression
@@ -122,6 +122,8 @@ Resources:
 
 * Scikit-Learn official documentation: https://scikit-learn.org/stable/modules/classes.html
 * DataCamp's Machine Learning with Tree-Based Models in
+
+##
 
 ## Generic Roadmap to learn Python for data analysis&#x20;
 
