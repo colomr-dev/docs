@@ -63,3 +63,6 @@ i  hosting[pvtech-site]: releasing new version...
 Project Console: https://console.firebase.google.com/project/pvtech-site/overview
 Hosting URL: https://pvtech-site.web.app
 ```
+
+Last but not least important step:\
+[https://firebase.google.com/docs/hosting/custom-domain](https://firebase.google.com/docs/hosting/custom-domain) \
