@@ -20,6 +20,8 @@ It is cheaper an most suitable option than GCP for personal projects.
 
 {% embed url="https://firebase.google.com/docs?hl=es-419" %}
 
+{% embed url="https://firebase.google.com/docs/cli#install-cli-mac-linux" %}
+
 {% embed url="https://gohugo.io/hosting-and-deployment/hosting-on-firebase/" %}
 
 ## Setup Firebase Project & Tools
