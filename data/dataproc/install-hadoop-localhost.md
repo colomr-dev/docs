@@ -149,7 +149,7 @@ Add the below lines to the file `$HADOOP_HOME/etc/hadoop/core-site.xml`
 <configuration>
     <property>
         <name>fs.defaultFS</name>
-        <value>hdfs://192.168.5.100:9000</value>
+        <value>hdfs://localhost:9000</value>
     </property>
 </configuration>
 ```
