@@ -92,3 +92,40 @@ export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
 export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
 export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"
 ```
+
+Next, run the below command to apply new changes within the file '\~/.bashrc'.
+
+```
+source ~/.bashrc
+```
+
+Verify by checking each environment variable, i.e:
+
+```
+hadoop@puzzle:~$ echo $HADOOP_HOME
+/usr/local/hadoop
+```
+
+Also configure the JAVA\_HOME environment variable in the 'hadoop-env.sh' script
+
+```
+vim $HADOOP_HOME/etc/hadoop/hadoop-env.sh
+```
+
+Uncomment the JAVA\_HOME environment line and change the value to the Java OpenJDK installation directory
+
+```
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+```
+
+Let's check that all is working as expected
+
+```
+hadoop@puzzle:~$ hadoop version
+Hadoop 3.3.5
+Source code repository https://github.com/apache/hadoop.git -r 706d88266abcee09ed78fbaa0ad5f74d818ab0e9
+Compiled by stevel on 2023-03-15T15:56Z
+Compiled with protoc 3.7.1
+From source with checksum 6bbd9afcf4838a0eb12a5f189e9bd7
+This command was run using /usr/local/hadoop/share/hadoop/common/hadoop-common-3.3.5.jar
+```
