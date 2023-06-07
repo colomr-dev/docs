@@ -20,8 +20,9 @@
 
 ## Dataproc
 
+* [Install Hadoop @ localhost](dataproc/install-hadoop-localhost.md)
 * [Jobs on Clusters](dataproc/jobs-on-clusters.md)
 
 ## Cloud Composer
 
-* [Apache Airflow @ localhost](cloud-composer/apache-airflow-localhost.md)
+* [Apache Airflow @ localhost](cloud-composer/cloud-composer.md)
