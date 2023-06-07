@@ -52,3 +52,17 @@ Now let’s install apache-airflow by using python PIP
 pip3 install apache-airflow
 ```
 
+Now, let’s initialize the airflow database by issuing `airflow db init`
+
+```
+fcolomer@puzzle:~/airflow$ airflow db init
+DB: sqlite:////home/fcolomer/airflow/airflow.db
+[2023-06-07T12:31:33.888+0200] {migration.py:213} INFO - Context impl SQLiteImpl.
+[2023-06-07T12:31:33.890+0200] {migration.py:216} INFO - Will assume non-transactional DDL.
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+INFO  [alembic.runtime.migration] Running stamp_revision  -> 98ae134e6fff
+WARNI [airflow.models.crypto] empty cryptography key - values will not be stored encrypted.
+Initialization done
+
+```
