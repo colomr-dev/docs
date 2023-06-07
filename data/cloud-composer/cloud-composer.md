@@ -36,3 +36,19 @@ Install the following **libraries**:
 
 
 
+Make an airflow folder by issuing this command `mkdir airflow` in your home directory
+
+Create the airflow home environment variable
+
+`export AIRFLOW_HOME=~/airflow`
+
+`Add the variable in ~/.bashrc` file so the environment variable will stay after reboot
+
+### Install Apache Airflow
+
+Now let’s install apache-airflow by using python PIP
+
+```
+pip3 install apache-airflow
+```
+
