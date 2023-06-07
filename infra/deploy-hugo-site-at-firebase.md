@@ -6,11 +6,11 @@ description: How-to deploy Hugo generated static site at Google Firebase service
 
 ## Assumptions
 
-On this how-to we assume that:
+The following steps need to be cleared prior to follow the how-to:
 
-1. Understanding what Hugo SDK is and how to use it
-2. Once generated public files by executing `hugo` command
-3. We need to prepare Firebase to hosts our site
+1. Understand what Hugo SDK is and how to use it
+2. Make ready your site public files by issuing `hugo` command
+3. A Firebase account with a project assigned to host your site
 
 ## Google Firebase&#x20;
 
