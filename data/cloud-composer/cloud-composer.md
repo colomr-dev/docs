@@ -66,3 +66,9 @@ WARNI [airflow.models.crypto] empty cryptography key - values will not be stored
 Initialization done
 
 ```
+
+The next step is to create an admin user:
+
+```
+airflow users create --role Admin --email your@email.org -u username -p xxxx -f First -l Last
+```
