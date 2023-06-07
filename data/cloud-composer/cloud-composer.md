@@ -10,7 +10,7 @@ description: Apache Airflow workflow orchestration
 
 ## Install Apache Airflow Ubuntu on Desktop 22.04&#x20;
 
-For testing/learning purposes I'll install Apache Airflow on my local machine following theses steps:
+For testing/learning purposes we'll install Apache Airflow on my local machine following theses steps:
 
 ### Prerequisites&#x20;
 
