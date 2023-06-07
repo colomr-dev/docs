@@ -72,3 +72,37 @@ The next step is to create an admin user:
 ```
 airflow users create --role Admin --email your@email.org -u username -p xxxx -f First -l Last
 ```
+
+Now it is time to launch Airflow. First, we need to launch the airflow scheduler in background:
+
+```
+fcolomer@puzzle:~/airflow$ airflow scheduler --daemon
+  ____________       _____________
+ ____    |__( )_________  __/__  /________      __
+____  /| |_  /__  ___/_  /_ __  /_  __ \_ | /| / /
+___  ___ |  / _  /   _  __/ _  / / /_/ /_ |/ |/ /
+ _/_/  |_/_/  /_/    /_/    /_/  \____/____/|__/
+[2023-06-07T13:09:51.777+0200] {executor_loader.py:114} INFO - Loaded executor: SequentialExecutor
+```
+
+Once the scheduler is up and running, we can launch Airflow Web server:
+
+```
+fcolomer@puzzle:~/airflow$ airflow webserver -p 8080 --daemon
+  ____________       _____________
+ ____    |__( )_________  __/__  /________      __
+____  /| |_  /__  ___/_  /_ __  /_  __ \_ | /| / /
+___  ___ |  / _  /   _  __/ _  / / /_/ /_ |/ |/ /
+ _/_/  |_/_/  /_/    /_/    /_/  \____/____/|__/
+Running the Gunicorn Server with:
+Workers: 4 sync
+Host: 0.0.0.0:8080
+Timeout: 120
+Logfiles: - -
+Access Logformat: 
+=================================================================
+
+```
+
+From now on we need to understand core concepts and create our dags: \
+[https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/index.html](https://airflow.apache.org/docs/apache-airflow/stable/core-concepts/index.html)&#x20;
