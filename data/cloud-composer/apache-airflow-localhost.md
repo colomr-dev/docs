@@ -1,8 +1,8 @@
 ---
-description: Managed Apache Airflow workflow orchestration on GCP
+description: Apache Airflow workflow orchestration
 ---
 
-# Cloud Composer
+# Apache Airflow @ localhost
 
 {% embed url="https://airflow.apache.org/docs/apache-airflow/stable/index.html" %}
 
