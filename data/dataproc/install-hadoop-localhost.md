@@ -129,3 +129,69 @@ Compiled with protoc 3.7.1
 From source with checksum 6bbd9afcf4838a0eb12a5f189e9bd7
 This command was run using /usr/local/hadoop/share/hadoop/common/hadoop-common-3.3.5.jar
 ```
+
+### Setting up Hadoop Cluster: Pseudo-Distributed Mode
+
+This allows you to run a hadoop cluster with distributed mode even with only a single node/server. In this mode, hadoop processes will be run in separate Java processes.
+
+* _core-site.xml_ - This will be used to define NameNode for the hadoop cluster.
+* _hdfs-site.xml_ - This configuration will be sued to define the DataNode on the hadoop cluster.
+* _mapred-site.xml_ - The MapReduce configuration for the hadoop cluster.
+* _yarn-site.xml_ - ResourceManager and NodeManager configuration for hadoop cluster.
+
+We'll set up an Apache Hadoop cluster with Pseudo-Distributed mode on a single Ubuntu machine. To do that, we'll make changes to some of the hadoop configurations:
+
+#### Setting up NameNode and DataNode <a href="#setting-up-namenode-and-datanode" id="setting-up-namenode-and-datanode"></a>
+
+Add the below lines to the file `$HADOOP_HOME/etc/hadoop/core-site.xml`
+
+```
+<configuration>
+    <property>
+        <name>fs.defaultFS</name>
+        <value>hdfs://192.168.5.100:9000</value>
+    </property>
+</configuration>
+```
+
+Next, run the following command to create new directories that will be used for the DataNode on the hadoop cluster. Then, change the ownership of DataNode directories to the 'hadoop' user.
+
+```
+sudo mkdir -p /home/hadoop/hdfs/{namenode,datanode}
+sudo chown -R hadoop:hadoop /home/hadoop/hdfs
+```
+
+After that, Add the following configuration to the file `$HADOOP_HOME/etc/hadoop/hdfs-site.xml`
+
+```
+<configuration>
+
+    <property>
+        <name>dfs.replication</name>
+        <value>1</value>
+    </property>
+
+   <property>
+      <name>dfs.name.dir</name>
+      <value>file:///home/hadoop/hdfs/namenode</value>
+   </property>
+
+   <property>
+      <name>dfs.data.dir</name>
+      <value>file:///home/hadoop/hdfs/datanode</value>
+   </property>
+
+</configuration>
+```
+
+With the NameNode and DataNode configured, run the below command to format the hadoop filesystem
+
+```
+hdfs namenode -format
+```
+
+Start the NameNode and DataNode via the following command
+
+```
+start-dfs.sh
+```
