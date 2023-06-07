@@ -25,4 +25,4 @@
 
 ## Cloud Composer
 
-* [Install Apache Airflow @ localhost](cloud-composer/install-apache-airflow-localhost.md)
+* [Install Apache Airflow @ localhost](cloud-composer/cloud-composer.md)

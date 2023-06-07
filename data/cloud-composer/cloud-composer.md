@@ -2,13 +2,13 @@
 description: Apache Airflow workflow orchestration
 ---
 
-# Apache Airflow @ localhost
+# Install Apache Airflow @ localhost
 
 {% embed url="https://airflow.apache.org/docs/apache-airflow/stable/index.html" %}
 
 {% embed url="https://cloud.google.com/composer/docs" %}
 
-## Install Apache Airflow Ubuntu Desktop 22.04&#x20;
+## Install Apache Airflow Ubuntu on Desktop 22.04&#x20;
 
 For testing/learning purposes I'll install Apache Airflow on my local machine following theses steps:
 
