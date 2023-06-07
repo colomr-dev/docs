@@ -20,6 +20,8 @@ Hadoop is a huge project under the Apache Software Foundation, it's mainly writt
 sudo apt update && sudo apt install default-jdk
 ```
 
+### Setting up user and Password-less SSH Authentication
+
 Install Parallel Distributed Shell to issue commands to groups of hosts in parallel
 
 ```
@@ -38,3 +40,25 @@ Add the 'hadoop' user to the 'sudo' group via the usermod command below.
 ```
 sudo usermod -aG sudo hadoop
 ```
+
+Log in to the '_hadoop_' user&#x20;
+
+```
+su - hadoop
+```
+
+Generate SSH public and private key
+
+```
+ssh-keygen -t rsa
+```
+
+SSH public key 'id\_rsa.pub' to the 'authorized\_keys' file and change the default permission to 600
+
+```
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+chmod 600 ~/.ssh/authorized_keys
+```
+
+### Downloading Hadoop
+
