@@ -25,7 +25,7 @@ sudo apt update && sudo apt install default-jdk
 Install Parallel Distributed Shell to issue commands to groups of hosts in parallel
 
 ```
-sudo apt install pshd
+sudo apt install pdsh
 ```
 
 Create a new user 'hadoop' and set up the password for the 'hadoop' user
@@ -66,7 +66,8 @@ Download the Apache Hadoop package to the current working directory, extract and
 
 ```
 wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.5/hadoop-3.3.5.tar.gz
-
+tar -xvzf hadoop-3.3.4.tar.gz
+sudo mv hadoop-3.3.4 /usr/local/hadoop
 ```
 
 Lastly, change the ownership of the hadoop installation directory
@@ -91,6 +92,7 @@ export HADOOP_YARN_HOME=$HADOOP_HOME
 export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
 export PATH=$PATH:$HADOOP_HOME/sbin:$HADOOP_HOME/bin
 export HADOOP_OPTS="-Djava.library.path=$HADOOP_HOME/lib/native"
+export PDSH_RCMD_TYPE=ssh
 ```
 
 Next, run the below command to apply new changes within the file '\~/.bashrc'.
