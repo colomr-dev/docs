@@ -19,30 +19,36 @@ Previous to install Airflow itself we need to satisfy some prerequisites:\
 
 If your are already using **Python3** skip to **libraries**:
 
-`sudo apt install software-properties-common`
-
-`sudo apt-add-repository universe`
-
-`sudo apt install python-setuptools`
+```
+sudo apt install software-properties-common
+sudo apt-add-repository universe
+sudo apt install python-setuptools
+```
 
 \
 Install the following **libraries**:
 
-`sudo apt install libmysqlclient-dev`
-
-`sudo apt install libssl-dev`
-
-`sudo apt install libkrb5-dev`
-
-
+```
+sudo apt install libmysqlclient-dev
+sudo apt install libssl-dev
+sudo apt install libkrb5-dev
+```
 
 Make an airflow folder by issuing this command `mkdir airflow` in your home directory
 
 Create the airflow home environment variable
 
-`export AIRFLOW_HOME=~/airflow`
+```
+export AIRFLOW_HOME=~/airflow
+```
 
 `Add the variable in ~/.bashrc` file so the environment variable will stay after reboot
+
+Next, run the below command to apply new changes within the file '\~/.bashrc'.
+
+```
+source ~/.bashrc
+```
 
 ### Install Apache Airflow
 
