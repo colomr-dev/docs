@@ -197,3 +197,17 @@ Start the NameNode and DataNode via the following command
 ```
 start-dfs.sh
 ```
+
+The output looks like
+
+```
+hadoop@puzzle:~$ start-dfs.sh 
+Starting namenodes on [localhost]
+localhost: Warning: Permanently added 'localhost' (ED25519) to the list of known hosts.
+Starting datanodes
+Starting secondary namenodes [arabesco]
+arabesco: Warning: Permanently added 'arabesco' (ED25519) to the list of known hosts.
+```
+
+Now that the NameNode and DataNode processes are running and the web interface is liseting at  port '9870'
+
