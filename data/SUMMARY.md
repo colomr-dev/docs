@@ -18,6 +18,7 @@
 ## Dataflow
 
 * [Overview](dataflow/overview.md)
+* [Install Apache Beam (DirectRunner)](dataflow/install-apache-beam-directrunner.md)
 * [Jobs](dataflow/jobs.md)
 * [Pipelines](dataflow/pipelines.md)
 * [Workbench](dataflow/workbench.md)
