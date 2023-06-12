@@ -11,6 +11,10 @@
 
 * [DBeaver Community Edition](tools/dbeaver-community-edition.md)
 
+## Dataprep
+
+* [Dataprep](dataprep/dataprep.md)
+
 ## Dataflow
 
 * [Overview](dataflow/overview.md)

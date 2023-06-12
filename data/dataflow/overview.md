@@ -4,7 +4,7 @@ description: Product Overview
 
 # Overview
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 We need to install **Apache Beam SDK**\
 [https://cloud.google.com/dataflow/docs/guides/installing-beam-sdk#python](https://cloud.google.com/dataflow/docs/guides/installing-beam-sdk#python)&#x20;
