@@ -66,8 +66,8 @@ Download the Apache Hadoop package to the current working directory, extract and
 
 ```
 wget https://dlcdn.apache.org/hadoop/common/hadoop-3.3.5/hadoop-3.3.5.tar.gz
-tar -xvzf hadoop-3.3.4.tar.gz
-sudo mv hadoop-3.3.4 /usr/local/hadoop
+tar -xvzf hadoop-3.3.5.tar.gz
+sudo mv hadoop-3.3.5 /usr/local/hadoop
 ```
 
 Lastly, change the ownership of the hadoop installation directory
