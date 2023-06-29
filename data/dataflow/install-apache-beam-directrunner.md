@@ -8,7 +8,7 @@ Create working director and python env
 
 ```
 mkdir ~/beam
-python -m venv ~/repos/pyEnv/beam
+python -m venv ~/repos/conf/pyEnv/beam
 ```
 
 Install the latest Python SDK from PyPI
