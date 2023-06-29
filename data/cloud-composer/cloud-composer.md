@@ -36,6 +36,10 @@ sudo apt install libkrb5-dev
 
 Make an airflow folder by issuing this command `mkdir airflow` in your home directory
 
+```
+mkdir airflow
+```
+
 Create the airflow home environment variable
 
 ```
@@ -54,9 +58,8 @@ source ~/.bashrc
 
 Now let’s install apache-airflow by using python PIP
 
-```
-pip3 install apache-airflow
-```
+<pre><code><strong>sudo pip3 install apache-airflow
+</strong></code></pre>
 
 Now, let’s initialize the airflow database by issuing `airflow db init`
 
