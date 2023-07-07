@@ -9,3 +9,4 @@
 ***
 
 * [Deploy Hugo site at Firebase](deploy-hugo-site-at-firebase.md)
+* [Hide user from login screen Ubuntu 22.04 Desktop](hide-user-from-login-screen-ubuntu-22.04-desktop.md)
