@@ -26,6 +26,7 @@
 
 * [Apache Beam](key-concepts/apache-beam.md)
 * [Parquet, Avro or ORC](key-concepts/parquet-avro-or-orc.md)
+* [Data Lake, Data Mart, Data Lakehouse](key-concepts/data-lake-data-mart-data-lakehouse.md)
 
 ## ✅ Basics
 
