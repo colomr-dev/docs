@@ -22,6 +22,8 @@
 ## 📊 PDE Certification <a href="#pde" id="pde"></a>
 
 * [Data Analytics Pipeline](pde/data-analytics-pipeline.md)
+* [Data Engineer Learning Path](https://www.cloudskillsboost.google/journeys/16)
+* [Data Engineer Learning Path](pde/data-engineer-learning-path.md)
 
 ## ⭐ Key Concepts
 
