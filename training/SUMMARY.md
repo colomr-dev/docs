@@ -6,6 +6,7 @@
 
 * [Google Cloud Webminars](https://cloudonair.withgoogle.com/)
 * [Learning & Certification Hub](https://www.googlecloudcommunity.com/gc/Learning-Certification-Hub/ct-p/cloud-learning-cert-forums)
+* [Cloud Skills Boost](https://www.cloudskillsboost.google/)
 * [Partner Technical Training](https://www.partneradvantage.goog/GCPPRM/s/trainingoverview)
 * [PDE Learning Path](https://www.cloudskillsboost.google/paths/16)
 * [MLE Learning Path](https://www.cloudskillsboost.google/paths/17)
