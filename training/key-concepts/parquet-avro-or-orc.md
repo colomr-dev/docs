@@ -30,6 +30,16 @@ Parquet stores data in columns rather than rows, which provides several benefits
 
 **Parquet is a binary format**. It stores data in a binary format that is optimised for efficient storage and processing.
 
+```
+pip install parquet-tools
+```
+
+Una vez instalado el paquete parquet-tools, podemos utilizar el comando parquet-tools para ver el contenido de archivos de Parquet de forma legible. Por ejemplo, para ver el contenido de un archivo de Parquet llamado parquet.parquet, podemos usar el siguiente comando:
+
+```
+parquet-tools cat parquet.parquet
+```
+
 {% embed url="https://parquet.apache.org/documentation/latest/" %}
 
 <figure><img src="../.gitbook/assets/Screenshot 2023-04-09 19.15.48.png" alt=""><figcaption></figcaption></figure>
