@@ -23,6 +23,7 @@
 
 * [Data Analytics Pipeline](pde/data-analytics-pipeline.md)
 * [Data Engineer Learning Path](https://www.cloudskillsboost.google/journeys/16)
+* [🔍 BigQuery](pde/bigquery.md)
 
 ## ⭐ Key Concepts
 
