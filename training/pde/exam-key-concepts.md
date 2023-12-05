@@ -6,6 +6,12 @@ description: Important concepts to master for the exam
 
 
 
-* Normalization and denormalization of relational databases
-* Authorized Views vs. materialized views
+* Database Formalisation vs. Denormalisation
+* Authorised Views vs. Materialised Views
 *
+
+
+
+## Saved Pages > PDE
+
+{% embed url="https://developers.google.com/profile/u/fcolomer/saved-pages/collection/170161879951" %}
