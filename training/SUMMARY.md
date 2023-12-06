@@ -13,6 +13,7 @@
 * [Iberian Partner Tech Community](https://events.withgoogle.com/iberia-cloud-partner-tech-community/)
 * [Google Cloud Community](https://www.googlecloudcommunity.com/gc/Google-Cloud/ct-p/google-cloud)
 * [Cloud Hub](https://www.googlecloudcommunity.com/gc/Cloud-Hub/bd-p/cloud-hub)
+* [CertMetrics](https://cp.certmetrics.com/google/es/login)
 
 ## 🤖 MLE Certification <a href="#mle" id="mle"></a>
 
