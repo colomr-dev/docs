@@ -15,6 +15,10 @@
 * [Cloud Hub](https://www.googlecloudcommunity.com/gc/Cloud-Hub/bd-p/cloud-hub)
 * [CertMetrics](https://cp.certmetrics.com/google/es/login)
 
+***
+
+* [💡 Certification Tips](certification-tips.md)
+
 ## 🤖 MLE Certification <a href="#mle" id="mle"></a>
 
 * [AI / ML Path](mle/ai-ml-path.md)
