@@ -29,4 +29,4 @@
 
 ## 👨💻 PCD CERTIFICATION <a href="#pcd" id="pcd"></a>
 
-* [✍ Copy of Exam Key Concepts](pcd/copy-of-exam-key-concepts.md)
+* [✍ Exam Key Concepts (draft)](pcd/exam-key-concepts-draft.md)
