@@ -9,12 +9,10 @@
 * [Learning & Certification Hub](https://www.googlecloudcommunity.com/gc/Learning-Certification-Hub/ct-p/cloud-learning-cert-forums)
 * [Cloud Skills Boost](https://www.cloudskillsboost.google/)
 * [PDE Learning Path](https://www.cloudskillsboost.google/paths/16)
-* [MLE Learning Path](https://www.cloudskillsboost.google/paths/17)
 * [PCD Learning Path](https://www.cloudskillsboost.google/paths/19)
 * [Google Cloud Webminars](https://cloudonair.withgoogle.com/)
 * [Partner Technical Training](https://www.partneradvantage.goog/GCPPRM/s/trainingoverview)
 * [Google Cloud Community](https://www.googlecloudcommunity.com/gc/Google-Cloud/ct-p/google-cloud)
-* [Iberian Partner Tech Community](https://events.withgoogle.com/iberia-cloud-partner-tech-community/)
 * [Cloud Hub](https://www.googlecloudcommunity.com/gc/Cloud-Hub/bd-p/cloud-hub)
 * [CertMetrics](https://cp.certmetrics.com/google/es/login)
 
