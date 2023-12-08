@@ -4,8 +4,8 @@
 
 ## ↗ Resources
 
-* [🔡 Exam Dumps Platforms](resources/exam-dumps-platforms.md)
-* [💡 Certification Tips](resources/certification-tips.md)
+* [🔡 Exam Dumps Platforms](exam-dumps-platforms.md)
+* [💡 Certification Tips](certification-tips.md)
 * [Learning & Certification Hub](https://www.googlecloudcommunity.com/gc/Learning-Certification-Hub/ct-p/cloud-learning-cert-forums)
 * [Cloud Skills Boost](https://www.cloudskillsboost.google/)
 * [PDE Learning Path](https://www.cloudskillsboost.google/paths/16)
@@ -20,19 +20,12 @@
 
 ## 📊 PDE Certification <a href="#pde" id="pde"></a>
 
-* [Data Analytics Pipeline](pde/data-analytics-pipeline.md)
-* [Data Engineer Learning Path](https://www.cloudskillsboost.google/journeys/16)
 * [✍ Exam Key Concepts](pde/exam-key-concepts.md)
-
-## ⭐ Key Concepts
-
-* [Apache Beam](key-concepts/apache-beam.md)
-* [Parquet, Avro or ORC](key-concepts/parquet-avro-or-orc.md)
-* [Data Lake, Data Mart, Data Lakehouse](key-concepts/data-lake-data-mart-data-lakehouse.md)
-
-## ✅ Basics
-
-* [Products Comparison](basics/products-comparison.md)
+* [Data Analytics Pipeline](pde/data-analytics-pipeline.md)
+* [Products Comparison](pde/products-comparison.md)
+* [Apache Beam](pde/apache-beam.md)
+* [Parquet, Avro or ORC](pde/parquet-avro-or-orc.md)
+* [Data Lake, Data Mart, Data Lakehouse](pde/data-lake-data-mart-data-lakehouse.md)
 
 ## Group 1
 
