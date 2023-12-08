@@ -4,6 +4,8 @@
 
 ## ↗ Resources
 
+* [🔡 Exam Dumps Platforms](resources/exam-dumps-platforms.md)
+* [💡 Certification Tips](resources/certification-tips.md)
 * [Learning & Certification Hub](https://www.googlecloudcommunity.com/gc/Learning-Certification-Hub/ct-p/cloud-learning-cert-forums)
 * [Cloud Skills Boost](https://www.cloudskillsboost.google/)
 * [PDE Learning Path](https://www.cloudskillsboost.google/paths/16)
@@ -15,16 +17,6 @@
 * [Iberian Partner Tech Community](https://events.withgoogle.com/iberia-cloud-partner-tech-community/)
 * [Cloud Hub](https://www.googlecloudcommunity.com/gc/Cloud-Hub/bd-p/cloud-hub)
 * [CertMetrics](https://cp.certmetrics.com/google/es/login)
-
-***
-
-* [🔡 Exam Dumps Platforms](exam-dumps-platforms.md)
-* [💡 Certification Tips](certification-tips.md)
-
-## 🤖 MLE Certification <a href="#mle" id="mle"></a>
-
-* [AI / ML Path](mle/ai-ml-path.md)
-* [How Google Does Machine Learning](mle/how-google-does-machine-learning.md)
 
 ## 📊 PDE Certification <a href="#pde" id="pde"></a>
 
@@ -41,3 +33,7 @@
 ## ✅ Basics
 
 * [Products Comparison](basics/products-comparison.md)
+
+## Group 1
+
+* [Page 1](group-1/page-1.md)
