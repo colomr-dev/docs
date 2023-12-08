@@ -27,6 +27,6 @@
 * [Parquet, Avro or ORC](pde/parquet-avro-or-orc.md)
 * [Data Lake, Data Mart, Data Lakehouse](pde/data-lake-data-mart-data-lakehouse.md)
 
-## Group 1
+## 👨💻 PCD CERTIFICATION <a href="#pcd" id="pcd"></a>
 
-* [Page 1](group-1/page-1.md)
+* [✍ Copy of Exam Key Concepts](pcd/copy-of-exam-key-concepts.md)
