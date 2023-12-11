@@ -7,6 +7,7 @@
 * [Code Beauty](https://codebeautify.org/htmlviewer)
 * [Apache Beam Python SDK (quick-start)](https://beam.apache.org/get-started/quickstart/python/)
 * [Programming model for Apache Beam](https://cloud.google.com/dataflow/docs/concepts/beam-programming-model)
+* [Apache Beam (examples)](https://github.com/apache/beam/tree/master/sdks/python/apache\_beam/examples)
 
 ## ✂ Snippets
 
