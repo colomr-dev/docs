@@ -24,6 +24,7 @@
 * [Apache Beam](pde/apache-beam.md)
 * [Parquet, Avro or ORC](pde/parquet-avro-or-orc.md)
 * [Data Lake, Data Mart, Data Lakehouse](pde/data-lake-data-mart-data-lakehouse.md)
+* [PDE Cheat Sheet](pde/pde-cheat-sheet.md)
 
 ## 👨💻 PCD CERTIFICATION <a href="#pcd" id="pcd"></a>
 
