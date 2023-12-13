@@ -1,8 +1,8 @@
 ---
-description: How do I hide a particular user from the login screen
+description: Hide a specific user from the login screen on Ubuntu 22.04 Desktop
 ---
 
-# Hide user from login screen Ubuntu 22.04 Desktop
+# Hide specific user from login
 
 To hide a user named `XXX`, create a file named
 

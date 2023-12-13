@@ -10,4 +10,4 @@
 ## 🐧 Ubuntu
 
 * [Install FortiClient VPN](ubuntu/install-forticlient-vpn.md)
-* [Hide user from login screen Ubuntu 22.04 Desktop](ubuntu/hide-user-from-login-screen-ubuntu-22.04-desktop.md)
+* [Hide specific user from login](ubuntu/hide-specific-user-from-login.md)
