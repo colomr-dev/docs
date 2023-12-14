@@ -6,7 +6,7 @@ description: How To Install Node.js on Ubuntu 22.04
 
 The Node version from Ubuntu apt repo looks a bit outdated:
 
-```
+```bash
 fcolomer@arabesco:~$ npm --version
 8.5.1
 ```
@@ -21,19 +21,19 @@ This piece of software allows you to install and maintain many different indepen
 
 To install nvm :
 
-```
+```bash
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 ```
 
 This will install the nvm script to your user account. To use it, you must first source your .bashrc file:
 
-```
+```bash
 source ~/.bashrc
 ```
 
 As the v20.x branch is the most stable so far, let's take a look to remote available repos:
 
-```
+```bash
 fcolomer@arabesco:~$ nvm list-remote |egrep -i LTS |egrep v20
         v20.9.0   (LTS: Iron)
        v20.10.0   (Latest LTS: Iron)
@@ -44,9 +44,15 @@ fcolomer@arabesco:~$ nvm list-remote |egrep -i LTS |egrep v20
 
 `node_version` = v20.10.0 or corresponding version
 
-```
+```bash
 nvm install node_version
 ```
+
+if not specific version is required, it is better to issue:
+
+`nvm install --lts`
+
+To install the **latest LTS version**
 
 ### Removing Node.js  (apt, nvm)
 
