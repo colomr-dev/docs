@@ -4,9 +4,9 @@
 
 ## 🛑 HUGO FRAMEWORK <a href="#hugo" id="hugo"></a>
 
-* [Host a static site in GCS](hugo/host-a-static-site-in-gcs.md)
-* [Deploy Hugo site at Firebase](hugo/deploy-hugo-site-at-firebase.md)
-* [Page](hugo/page.md)
+* [Host a static site in GCS](howto/host-a-static-site-in-gcs.md)
+* [Deploy Hugo site at Firebase](howto/deploy-hugo-site-at-firebase.md)
+* [Front matter variables](hugo/front-matter-variables.md)
 
 ## 🐧 Ubuntu
 
