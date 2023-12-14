@@ -13,7 +13,7 @@ slug: "gaiax"
 url: "blog/gaiax/"
 date: "2022-11-08"
 categories: 
-  - "viejos rollos"
+  - "rollos-viejos"
 tags: 
   - "big-tech"
   - "cloud"
