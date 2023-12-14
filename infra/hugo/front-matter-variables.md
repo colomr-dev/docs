@@ -7,16 +7,22 @@ description: My custom front matter variables or post header
 **Front matter** allows you to keep metadata attached to an instance&#x20;
 
 ```yaml
-+++
-slug = 'test'
-url = '/blog/test'
-title = 'My First Post'
-description = 'Pots description goes here.'
-tags = ['personal', 'test']
-categories = ['Development', 'VIM']
-date = '2012-04-06'
-draft = 'false'
-+++
+---
+title: "Gaia-X, infraestructura de datos abierta"
+slug: "gaiax"
+url: "blog/gaiax/"
+date: "2022-11-08"
+categories: 
+  - "negocio"
+  - "tecnologia"
+tags: 
+  - "big-tech"
+  - "cloud"
+  - "gaia-x"
+  - "iaas"
+  - "infraestructura"
+coverImage: "Building-a-European-data-infrastructure-Legal-framework-of-GAIA-X.png"
+---
 ```
 
 {% embed url="https://gohugo.io/content-management/front-matter/" %}
