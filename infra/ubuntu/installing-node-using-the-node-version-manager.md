@@ -11,7 +11,7 @@ fcolomer@arabesco:~$ npm --version
 8.5.1
 ```
 
-Considering that latest version as of&#x20;
+Considering that latest version as of  December 2023 is:
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
