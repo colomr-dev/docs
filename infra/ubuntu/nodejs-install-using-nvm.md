@@ -2,7 +2,7 @@
 description: How To Install Node.js on Ubuntu 22.04
 ---
 
-# Installing Node Using the Node Version Manager
+# NodeJS install using nvm
 
 The Node version from Ubuntu apt repo looks a bit outdated:
 
@@ -12,8 +12,6 @@ fcolomer@arabesco:~$ npm --version
 ```
 
 Considering that latest version as of  December 2023 is v21.4
-
-{% embed url="https://nodejs.org/en" %}
 
 Another way of installing Node.js that is particularly flexible is to use **nvm**, the Node Version Manager.&#x20;
 

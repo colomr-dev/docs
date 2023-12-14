@@ -9,6 +9,6 @@
 
 ## 🐧 Ubuntu
 
-* [Installing Node Using the Node Version Manager](ubuntu/installing-node-using-the-node-version-manager.md)
+* [NodeJS install using nvm](ubuntu/nodejs-install-using-nvm.md)
 * [Install FortiClient VPN](ubuntu/install-forticlient-vpn.md)
 * [Hide specific user from login](ubuntu/hide-specific-user-from-login.md)
