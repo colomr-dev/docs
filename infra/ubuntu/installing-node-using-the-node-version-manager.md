@@ -40,7 +40,7 @@ fcolomer@arabesco:~$ nvm list-remote |egrep -i LTS |egrep v20
 
 ```
 
-### Installing Node.js from nvm
+### Installing Node.js (nvm)
 
 `node_version` = v20.10.0 or corresponding version
 
@@ -48,7 +48,7 @@ fcolomer@arabesco:~$ nvm list-remote |egrep -i LTS |egrep v20
 nvm install node_version
 ```
 
-### Removing Node.js&#x20;
+### Removing Node.js  (apt, nvm)
 
 You can uninstall Node.js using **apt** or **nvm.**
 
