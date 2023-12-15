@@ -2,7 +2,7 @@
 
 * [Readme](README.md)
 
-## 🛑 HUGO FRAMEWORK <a href="#hugo" id="hugo"></a>
+## 👨💻 HUGO FRAMEWORK <a href="#hugo" id="hugo"></a>
 
 * [Host a static site in GCS](howto/host-a-static-site-in-gcs.md)
 * [Deploy Hugo site at Firebase](howto/deploy-hugo-site-at-firebase.md)
