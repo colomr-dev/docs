@@ -1,5 +1,5 @@
 ---
-description: Mantras collection  that need to be memorised for the exam
+description: Mantras to be memorised for the exam
 ---
 
 # 🪨 PDE Manifesto
@@ -32,5 +32,61 @@ A proprietary data architecture that combines the characteristics of data lakes 
 
 Business glossary provides a single place to maintain and manage business-related terminology and definitions across the organisation. It lets you attach the terms to the columns of cataloged data entries.
 {% endtab %}
+
+{% tab title="Ingesting & Processing" %}
+## Datastream
+
+Change data capture integrates data by reading change events (inserts, updates, and deletes) from source databases and writing them to a data destination, so action can be taken. Datastream supports change streams from Oracle and MySQL databases into BigQuery, Cloud SQL, Cloud Storage, and Cloud Spanner, enabling real-time analytics, database replication, and other use cases.
+
+## Programming model for Apache Beam
+
+### Pipelines
+
+A pipeline encapsulates the entire series of computations that are involved in reading input data, transforming that data, and writing output data. The input source and output sink can be the same type or of different types, letting you convert data from one format to another. Apache Beam programs start by constructing a Pipeline object, and then using that object as the basis for creating the pipeline's datasets. Each pipeline represents a single, repeatable job.
+
+### PCollection
+
+A `PCollection` represents a potentially distributed, multi-element dataset that acts as the pipeline's data. Apache Beam transforms use `PCollection` objects as inputs and outputs for each step in your pipeline. A `PCollection` can hold a dataset of a fixed size or an unbounded dataset from a continuously updating data source.
+
+### Transforms
+
+A transform represents a processing operation that transforms data. A transform takes one or more `PCollection`s as input, performs an operation that you specify on each element in that collection, and produces one or more `PCollection`s as output. A transform can perform nearly any kind of processing operation, including performing mathematical computations on data, converting data from one format to another, grouping data together, reading and writing data, filtering data to output only the elements you want, or combining data elements into single values.
+
+### ParDo
+
+`ParDo` is the core parallel processing operation in the Apache Beam SDKs, invoking a user-specified function on each of the elements of the input `PCollection`. `ParDo` collects the zero or more output elements into an output `PCollection`. The `ParDo` transform processes elements independently and possibly in parallel.
+
+### User-defined functions (UDFs)
+
+Some operations within Apache Beam allow executing user-defined code as a way of configuring the transform. For `ParDo`, user-defined code specifies the operation to apply to every element, and for `Combine`, it specifies how values should be combined. A pipeline might contain UDFs written in a different language than the language of your runner. A pipeline might also contain UDFs written in multiple languages.
+
+### Runner
+
+Runners are the software that accepts a pipeline and executes it. Most runners are translators or adapters to massively parallel big-data processing systems. Other runners exist for local testing and debugging.
+
+### Sink
+
+A transform that writes to an external data storage system, like a file or a database.
+
+### Advanced Concepts&#x20;
+
+#### Event time
+
+The time a data event occurs, determined by the timestamp on the data element itself. This contrasts with the time the actual data element gets processed at any stage in the pipeline.
+
+#### Windowing
+
+Windowing enables grouping operations over unbounded collections by dividing the collection into windows of finite collections according to the timestamps of the individual elements. A windowing function tells the runner how to assign elements to an initial window, and how to merge windows of grouped elements. Apache Beam lets you define different kinds of windows or use the predefined windowing functions.
+
+#### Watermarks
+
+Apache Beam tracks a watermark, which is the system's notion of when all data in a certain window can be expected to have arrived in the pipeline. Apache Beam tracks a watermark because data is not guaranteed to arrive in a pipeline in time order or at predictable intervals. In addition, there are no guarantees that data events will appear in the pipeline in the same order that they were generated.
+
+#### Trigger
+
+Triggers determine when to emit aggregated results as data arrives. For bounded data, results are emitted after all of the input has been processed. For unbounded data, results are emitted when the watermark passes the end of the window, indicating that the system believes all input data for that window has been processed. Apache Beam provides several predefined triggers and lets you combine them.
+{% endtab %}
 {% endtabs %}
+
+
 
