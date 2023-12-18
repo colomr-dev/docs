@@ -22,9 +22,7 @@ A unified data platform that integrates data lakes, data warehouses, and data st
 
 ## House Lake
 
-A proprietary data architecture that combines the characteristics of data lakes and data warehouses. House lakes store data in a structured format, but they also allow for the storage of raw, unprocessed data. This hybrid approach provides the benefits of both data lakes and data warehouses, making it a good option for organisations that need a flexible and scalable data platform.
-
-## &#x20;
+A proprietary data architecture that combines the characteristics of data lakes and data warehouses. House lakes store data in a structured format, but they also allow for the storage of raw, unprocessed data. This hybrid approach provides the benefits of both data lakes and data warehouses, making it a good option for organisations that need a flexible and scalable data platform.&#x20;
 {% endtab %}
 
 {% tab title="Desing & Governance" %}
@@ -37,6 +35,26 @@ Business glossary provides a single place to maintain and manage business-relate
 ## Datastream
 
 Change data capture integrates data by reading change events (inserts, updates, and deletes) from source databases and writing them to a data destination, so action can be taken. Datastream supports change streams from Oracle and MySQL databases into BigQuery, Cloud SQL, Cloud Storage, and Cloud Spanner, enabling real-time analytics, database replication, and other use cases.
+
+## Dataproc Workflow Templates
+
+Kinds of workflow templates:
+
+### Managed cluster
+
+A workflow template can specify a managed cluster. The workflow will create an "ephemeral" cluster to run workflow jobs, and then delete the cluster when the workflow is finished.
+
+### Cluster selector
+
+A workflow template can specify an existing cluster on which to run workflow jobs by specifying one or more user labels previously attached to the cluster. The workflow will run on a cluster that matches all of the labels. If multiple clusters match all labels, Dataproc selects the cluster with the most YARN available memory to run all workflow jobs.
+
+### Parameterized&#x20;
+
+If you will run a workflow template multiple times with different values, use parameters to avoid editing the workflow template for each run
+
+### Inline
+
+Workflows can be instantiated inline using the gcloud command with workflow template YAML files or by calling the Dataproc Instantiate Inline API.
 
 ## Programming model for Apache Beam
 
@@ -103,8 +121,41 @@ Apache Beam tracks a watermark, which is the system's notion of when all data in
 #### Trigger
 
 Triggers determine when to emit aggregated results as data arrives. For bounded data, results are emitted after all of the input has been processed. For unbounded data, results are emitted when the watermark passes the end of the window, indicating that the system believes all input data for that window has been processed. Apache Beam provides several predefined triggers and lets you combine them.
+
+### Apache Beam Windowing
+
+Windowing functions divide unbounded collections into logical components, or windows. Windowing functions group unbounded collections by the timestamps of the individual elements. Each window contains a finite number of elements.
+
+#### Tumbling or fixed windows
+
+Fixed-size windows are the simplest type of window. They divide the data into equal-sized time intervals, such as 1 hour or 1 day. This type of window is useful for tasks that require consistent analysis over specific time periods.
+
+#### Hopping or sliding windows
+
+Sliding windows are a type of window in Apache Beam that moves along a stream of data, processing a fixed-size window of events as they arrive. The window size can be specified, and the window can be moved forward or backward in time. This type of window is well-suited for applications that require real-time processing of data, such as fraud detection or anomaly detection.
+
+#### Session windows
+
+Session windows are often used for applications that require tracking user engagement or behaviour. They can be used to calculate metrics such as average session duration, number of sessions, and bounce rate. Session windows can also be used to identify users who are inactive or who have abandoned the website.
+
+#### Global windows
+
+Global windows are a type of window in Apache Beam that collects all events from a stream into a single window. This type of window is well-suited for applications that require processing all data at once, such as data aggregation or summarizing trends over the entire stream's history.  Global windows are often used for applications that require summarizing or aggregating data over a long period of time. They can be used to calculate metrics such as total number of events, average value, and maximum value. Global windows can also be used to identify trends or patterns in the data.
+
+### Apache Beam Triggers
+
+Beam provides a number of pre-built triggers that you can set:
+
+**Event time triggers** \
+These triggers operate on the event time, as indicated by the timestamp on each data element. Beam’s default trigger is event time-based.
+
+**Processing time triggers** \
+These triggers operate on the processing time – the time when the data element is processed at any given stage in the pipeline.
+
+**Data-driven triggers** \
+These triggers operate by examining the data as it arrives in each window, and firing when that data meets a certain property. Currently, data-driven triggers only support firing after a certain number of data elements.
+
+**Composite triggers**\
+These triggers combine multiple triggers in various ways.
 {% endtab %}
 {% endtabs %}
-
-
-
