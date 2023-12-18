@@ -10,7 +10,7 @@ description: Mantras collection  that need to be memorised for the exam
 {% tab title="Generic" %}
 ## Data Lake
 
-A large, centralized repository that stores raw data in its native format, without being transformed or structured for specific analysis. Data lakes are designed to accommodate a wide variety of data types, including structured, semi-structured, and unstructured data.
+A large, centralised repository that stores raw data in its native format, without being transformed or structured for specific analysis. Data lakes are designed to accommodate a wide variety of data types, including structured, semi-structured, and unstructured data.
 
 ## Data Mesh
 
@@ -18,13 +18,19 @@ A modern data architecture that distributes data ownership and management across
 
 ## Big Lake
 
-A unified data platform that integrates data lakes, data warehouses, and data streams into a single architecture. Big Lake makes it possible to store, analyze, and process data from all sources using a variety of tools and technologies.
+A unified data platform that integrates data lakes, data warehouses, and data streams into a single architecture. Big Lake makes it possible to store, analyse, and process data from all sources using a variety of tools and technologies.
+
+## House Lake
+
+A proprietary data architecture that combines the characteristics of data lakes and data warehouses. House lakes store data in a structured format, but they also allow for the storage of raw, unprocessed data. This hybrid approach provides the benefits of both data lakes and data warehouses, making it a good option for organisations that need a flexible and scalable data platform.
 
 ## &#x20;
 {% endtab %}
 
-{% tab title="Second Tab" %}
+{% tab title="Desing & Governance" %}
+## Business Glossary&#x20;
 
+Business glossary provides a single place to maintain and manage business-related terminology and definitions across the organisation. It lets you attach the terms to the columns of cataloged data entries.
 {% endtab %}
 {% endtabs %}
 
