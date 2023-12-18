@@ -40,6 +40,8 @@ Change data capture integrates data by reading change events (inserts, updates, 
 
 ## Programming model for Apache Beam
 
+{% embed url="https://beam.apache.org/documentation/programming-guide/" %}
+
 ### Pipelines
 
 A pipeline encapsulates the entire series of computations that are involved in reading input data, transforming that data, and writing output data. The input source and output sink can be the same type or of different types, letting you convert data from one format to another. Apache Beam programs start by constructing a Pipeline object, and then using that object as the basis for creating the pipeline's datasets. Each pipeline represents a single, repeatable job.
@@ -51,6 +53,22 @@ A `PCollection` represents a potentially distributed, multi-element dataset that
 ### Transforms
 
 A transform represents a processing operation that transforms data. A transform takes one or more `PCollection`s as input, performs an operation that you specify on each element in that collection, and produces one or more `PCollection`s as output. A transform can perform nearly any kind of processing operation, including performing mathematical computations on data, converting data from one format to another, grouping data together, reading and writing data, filtering data to output only the elements you want, or combining data elements into single values.
+
+**Core Beam Transforms**
+
+* `ParDo`\
+  `ParDo` is a Beam transform for generic parallel processing. The `ParDo` processing paradigm is similar to the “Map” phase of a Map/Shuffle/Reduce-style algorithm\
+  The `DoFn` object that you pass to `ParDo` contains the processing logic that gets applied to the elements in the input collection.
+* `GroupByKey`\
+  `GroupByKey` is a Beam transform for processing collections of key/value pairs. It’s a parallel reduction operation, analogous to the Shuffle phase of a Map/Shuffle/Reduce-style algorithm. The input to `GroupByKey` is a collection of key/value pairs that represents a _multimap_,
+* `CoGroupByKey`\
+  `CoGroupByKey` performs a relational join of two or more key/value `PCollection`s that have the same key type. Consider using `CoGroupByKey` if you have multiple data sets that provide information about related things. For example, let’s say you have two different files with user data: one file has names and email addresses; the other file has names and phone numbers. You can join those two data sets, using the user name as a common key and the other data as the associated values
+* `Combine`\
+  Simple combine operations, such as sums, can usually be implemented as a simple function. More complex combination operations might require you to create a subclass of `CombineFn` that has an accumulation type distinct from the input/output type.
+* `Flatten`\
+  `Flatten` merges multiple `PCollection`
+* `Partition`\
+  [`Partition`](https://github.com/apache/beam/blob/master/sdks/python/apache\_beam/transforms/core.py) is a Beam transform for `PCollection` objects that store the same data type. `Partition` splits a single `PCollection` into a fixed number of smaller collections.
 
 ### ParDo
 
