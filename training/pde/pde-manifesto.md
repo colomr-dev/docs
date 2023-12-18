@@ -164,14 +164,33 @@ These triggers combine multiple triggers in various ways.
 {% endtab %}
 
 {% tab title="Storage" %}
+## Normalisation vs. denormalisation
 
+[https://www.techtarget.com/searchdatamanagement/definition/denormalization](https://www.techtarget.com/searchdatamanagement/definition/denormalization)
+
+In a fully normalised database, each piece of data is stored only once, generally in separate tables, with a relation to one another. For this information to become useable it must be read out from the individual tables, as a query, and then joined together. If this process involves large amounts of data or needs to be done many times a second, it can quickly overwhelm the hardware of the database and slow performance
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+**Denormalization** is a database optimization technique in which we add redundant data to one or more tables. This can help us avoid costly joins in a relational database. Note that denormalization does not mean ‘reversing normalization’ or ‘not to normalize’. It is an optimization technique that is applied after normalization.
+
+## Views vs matereliasided views
+
+**View**: View is just a named query. It doesn't store anything. When there is a query on view, it runs the query of the view definition. Actual data comes from table.
+
+**Materialised views**: Stores data physically and get updated periodically. While querying MV, it gives data from MV.
+
+## Authorised views and materialised views
+
+Authorised views and authorised materialised views let you share query results with particular users and groups without giving them access to the underlying source data. The view or materialized view is given access to the data, instead of the user. You can also use the SQL query that creates the view or materialized view to restrict the columns and fields that users are able to query.
 {% endtab %}
 
 {% tab title="Analysis" %}
 
 {% endtab %}
 
-{% tab title="ML" %}
+{% tab title="Automation & ML" %}
 
 {% endtab %}
 {% endtabs %}
+
