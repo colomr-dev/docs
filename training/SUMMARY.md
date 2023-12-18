@@ -4,7 +4,6 @@
 
 ## ↗ Resources
 
-* [🔡 Exam Dumps Platforms](exam-dumps-platforms.md)
 * [PDE Learning Path](https://www.cloudskillsboost.google/paths/16)
 * [PDE Saved Pages](https://developers.google.com/profile/u/fcolomer/saved-pages/collection/170161879951)
 * [PDE Cert. Exam Guide](https://cloud.google.com/learn/certification/guides/data-engineer)
