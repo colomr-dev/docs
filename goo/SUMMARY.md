@@ -5,4 +5,4 @@
 ## ☁ Google Cloud
 
 * [📚 Learning Resources](google-cloud/learning-resources.md)
-* [Exams Practice Platforms](google-cloud/exams-practice-platforms.md)
+* [✅ Exams Practice Platforms](google-cloud/exams-dumps.md)
