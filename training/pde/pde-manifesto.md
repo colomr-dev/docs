@@ -183,6 +183,50 @@ In a fully normalised database, each piece of data is stored only once, generall
 ## Authorised views and materialised views
 
 Authorised views and authorised materialised views let you share query results with particular users and groups without giving them access to the underlying source data. The view or materialized view is given access to the data, instead of the user. You can also use the SQL query that creates the view or materialized view to restrict the columns and fields that users are able to query.
+
+## BigQuery (Storage)
+
+### BigQuery Data Partitioning
+
+A partitioned table is divided into segments, called partitions, that make it easier to manage and query your data. By dividing a large table into smaller partitions, you can improve query performance and control costs by reducing the number of bytes read by a query. You partition tables by specifying a partition column which is used to segment the table.
+
+If a query uses a qualifying filter on the value of the partitioning column, BigQuery can scan the partitions that match the filter and skip the remaining partitions. This process is called [pruning](https://cloud.google.com/bigquery/docs/querying-partitioned-tables).
+
+#### When to use partitioning
+
+* Improve the query performance
+* Your table operation exceeds a [standard table quota](https://cloud.google.com/bigquery/quotas#standard\_tables)
+* Calculate a query cost estimate by [pruning](https://cloud.google.com/bigquery/docs/querying-partitioned-tables) a partitioned table, then issuing a query dry run to estimate query costs.
+* Partition-level management features
+  * [Set a partition expiration time](https://cloud.google.com/bigquery/docs/managing-partitioned-tables#partition-expiration) to automatically delete entire partitions after a specified period of time
+  * [Write data to a specific partition](https://cloud.google.com/bigquery/docs/load-data-partitioned-tables#write-to-partition) using load jobs without affecting other partitions in the table
+  * [Delete specific partitions](https://cloud.google.com/bigquery/docs/managing-partitioned-tables#delete\_a\_partition) without scanning the entire table
+
+Consider [clustering](https://cloud.google.com/bigquery/docs/clustered-tables) a table instead of partitioning a table in the following circumstances:
+
+* You need more granularity than partitioning allows.
+* Your queries commonly use filters or aggregation against multiple columns.
+* The _cardinality_ of the number of values in a column or group of columns is large.
+* You don't need strict cost estimates before query execution.
+* Partitioning results in a small amount of data per partition (approximately less than 10 GB). Creating many small partitions increases the table's metadata, and can affect metadata access times when querying the table.
+* Partitioning results in a large number of partitions, exceeding the [limits on partitioned tables](https://cloud.google.com/bigquery/quotas#partitioned\_tables).
+* Your DML operations frequently modify (for example, every few minutes) most partitions in the table.
+
+#### Types of partitioning
+
+Different ways to partition a table:
+
+* [**Integer**](https://cloud.google.com/bigquery/docs/partitioned-tables#integer\_range) range partitioning
+*   [**Time-unit**](https://cloud.google.com/bigquery/docs/partitioned-tables#date\_timestamp\_partitioned\_tables) column partitioning \
+    You can partition a table on a `DATE`,`TIMESTAMP`, or `DATETIME` column in the table.
+
+    In addition, two special partitions are created:
+
+    * `__NULL__`: Contains rows with `NULL` values in the partitioning column.
+    * `__UNPARTITIONED__`: Contains rows where the value of the partitioning column is earlier than 1960-01-01 or later than 2159-12-31.
+* [**Ingesting time**](https://cloud.google.com/bigquery/docs/partitioned-tables#ingestion\_time) partitioning\
+  If your data might reach the limit of **4000 partitions** per table when using a finer time granularity, use a coarser granularity instead
+*
 {% endtab %}
 
 {% tab title="Analysis" %}
