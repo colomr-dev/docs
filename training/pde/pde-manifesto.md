@@ -404,6 +404,19 @@ A **cache** is a temporary data storage system. Fetching cached data can be much
 {% endtab %}
 
 {% tab title="Analysis" %}
+In a big data pipeline deployed on GCP, data warehousing and business intelligence (BI)/visualization are primarily handled by two products: BigQuery and Looker. This combination has been designed by Google to provide a modern data warehouse solution that is scalable, performant, and easy to use
+
+\
+Yes, you are correct. In a big data pipeline deployed on GCP, data warehousing and business intelligence (BI)/visualization are primarily handled by two products: BigQuery and Looker. This combination has been designed by Google to provide a modern data warehouse solution that is scalable, performant, and easy to use.
+
+**BigQuery** is a serverless, petabyte-scale data warehouse that is fully managed by Google. This means that you do not need to worry about provisioning or managing servers, storage, or networking. You simply load your data into BigQuery, and it will automatically be processed and stored for analysis.
+
+**Looker** is a cloud-based BI platform that allows you to visualize and analyze data from BigQuery. It provides a drag-and-drop interface that makes it easy to create dashboards, charts, and reports. You can also use Looker to share your insights with other users in your organization.
+
+Together, BigQuery and Looker provide a powerful and easy-to-use solution for data warehousing and BI/visualization on GCP. This combination is ideal for organizations of all sizes that need to analyze large volumes of data.
+
+## BigQuery Data Warehouse
+
 
 {% endtab %}
 
@@ -411,6 +424,8 @@ A **cache** is a temporary data storage system. Fetching cached data can be much
 
 {% endtab %}
 {% endtabs %}
+
+
 
 
 
