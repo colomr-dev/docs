@@ -25,7 +25,7 @@ A unified data platform that integrates data lakes, data warehouses, and data st
 A proprietary data architecture that combines the characteristics of data lakes and data warehouses. House lakes store data in a structured format, but they also allow for the storage of raw, unprocessed data. This hybrid approach provides the benefits of both data lakes and data warehouses, making it a good option for organisations that need a flexible and scalable data platform.&#x20;
 {% endtab %}
 
-{% tab title="Governance" %}
+{% tab title="Governance & Security" %}
 ## Business Glossary&#x20;
 
 Business glossary provides a single place to maintain and manage business-related terminology and definitions across the organisation. It lets you attach the terms to the columns of cataloged data entries.
