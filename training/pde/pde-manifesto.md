@@ -232,6 +232,80 @@ Different ways to partition a table:
 Table sharding is the practice of storing data in multiple tables, using a naming prefix such as `[PREFIX]_YYYYMMDD`.
 
 Partitioning is recommended over table sharding, because partitioned tables perform better. With sharded tables, BigQuery must maintain a copy of the schema and metadata for each table. BigQuery might also need to verify permissions for each queried table. This practice also adds to query overhead and affects query performance.
+
+## BigTable&#x20;
+
+### Schema Design (best practices)
+
+In Bigtable, a schema is a blueprint or model of a table, including the structure of the following table components:
+
+* Row keys
+* Column families, including their garbage collection policies
+* Columns
+* **The intersection of a row and column can contain multiple timestamped cells.** Each cell contains a unique, timestamped version of the data for that row and column.
+* **All operations are atomic at the row level.** An operation affects either an entire row or none of the row.
+* **Ideally, both reads and writes should be distributed evenly** across the row space of a table.
+* **Bigtable tables are sparse.** A column doesn't take up any space in a row that doesn't use the column.
+
+|      |          |    | SysMonitor |          |             |      |
+| ---- | -------- | -- | ---------- | -------- | ----------- | ---- |
+| %CPU | DiskRead | ID | Memory     | Priority | ProcessName | User |
+
+* **Bigtable is a key/value store, not a relational store.** It does not support joins, and transactions are supported only within a single row.
+* **Each table has only one index, the row key.** There are no secondary indexes. Each row key must be unique.
+* **Rows are sorted lexicographically by row key,** from the lowest to the highest byte string. Row keys are sorted in big-endian byte order (sometimes called network byte order), the binary equivalent of alphabetical order.
+* **Column families are not stored in any specific order.**
+* **Columns are grouped by column family and sorted in lexicographic order within the column family**. For example, in a column family called `SysMonitor` with column qualifiers of `ProcessName`, `User`, `%CPU`, `ID`, `Memory`, `DiskRead`, and `Priority`, Bigtable stores the columns in this order:
+
+The following general concepts apply to Bigtable schema design:
+
+{% embed url="https://cloud.google.com/bigtable/docs/schema-design#best-practices" %}
+
+### **Row keys to avoid**
+
+Some types of row keys can make it difficult to query your data, and some result in poor performance. This section describes some types of row keys that you should avoid using in Bigtable.
+
+**Row keys that start with a timestamp**. This pattern causes sequential writes to be pushed onto a single node, [creating a hotspot](https://cloud.google.com/bigtable/docs/schema-design-time-series#ensure\_that\_your\_row\_key\_avoids\_hotspotting). If you put a timestamp in a row key, precede it with a high-cardinality value like a user ID to avoid hotspots.
+
+**Row keys that cause related data to not be grouped**. Avoid row keys that cause related data to be stored in non-contiguous row ranges, which are inefficient to read together.
+
+**Sequential numeric IDs**. Suppose that your system assigns a numeric ID to each of your application's users.&#x20;
+
+A safer approach is to use a reversed version of the user's numeric ID, which spreads traffic more evenly across all of the nodes for your Bigtable table.
+
+**Frequently updated identifiers.** Avoid using a single row key to identify a value that must be updated frequently. For example, if you store memory-usage data for a number of devices once per second, _do not_ use a single row key for each device that is made up of the device ID and the metric being stored, such as `4c410523#memusage`, and update the row repeatedly. This type of operation overloads the tablet that stores the frequently used row. It can also cause a row to exceed its size limit, because a column's previous values take up space until the cells are removed during garbage collection.
+
+Instead, store each new reading in a new row. Using the memory usage example, each row key can contain the device ID, the type of metric, and a timestamp, so the row keys are similar to `4c410523#memusage#1423523569918`. This strategy is efficient because in Bigtable, creating a new row takes no more time than creating a new cell. In addition, this strategy lets you quickly read data from a specific date range by calculating the appropriate start and end keys.
+
+For values that change frequently, such as a counter that is updated hundreds of times each minute, it's best to keep the data in memory, at the application layer, and write new rows to Bigtable periodically.
+
+**Hashed values**. Hashing a row key removes your ability to take advantage of Bigtable's natural sorting order, making it impossible to store rows in a way that are optimal for querying. For the same reason, hashing values makes it challenging to use the Key Visualizer tool to troubleshoot issues with Bigtable. Use human-readable values instead of hashed values.
+
+**Values expressed as raw bytes** rather than human-readable strings. Raw bytes are fine for column values, but for readability and troubleshooting, use string values in row keys.
+
+### Special use cases <a href="#special-use-cases" id="special-use-cases"></a>
+
+You may have a unique dataset that requires special consideration when designing a schema to store it in Bigtable. This section describes some, but not all, different types of Bigtable data and some suggested tactics for storing it in the most optimal way.
+
+### Time-based data <a href="#time-based" id="time-based"></a>
+
+**Include a timestamp as part of your row key** if you often retrieve data based on the time when it was recorded.
+
+For example, your application might record performance-related data, such as CPU and memory usage, once per second for many machines. Your row key for this data could combine an identifier for the machine with a timestamp for the data (for example, `machine_4223421#1425330757685`). Keep in mind that row keys are [sorted lexicographically](https://cloud.google.com/bigtable/docs/schema-design#row-keys).
+
+**Don't use a timestamp by itself or at the beginning of a row key**, because this will cause sequential writes to be pushed onto a single node, creating a hotspot. In this case, you need to consider write patterns as well as read patterns.
+
+If you usually retrieve the most recent records first, you can use a **reversed timestamp** in the row key by subtracting the timestamp from your programming language's maximum value for long integers (in Java, java.lang.Long.MAX\_VALUE). With a reversed timestamp, the records will be ordered from most recent to least recent.
+
+**Note:** A timestamp is usually the number of microseconds since 1970-01-01 00:00:00 UTC.
+
+For information specifically about working with time series data, see [Schema design for time series data](https://cloud.google.com/bigtable/docs/schema-design-time-series).
+
+## Looker data cache and freshness&#x20;
+
+A **cache** is a temporary data storage system. Fetching cached data can be much faster than fetching it directly from the underlying data set, and it helps reduce the number of queries sent, decreasing costs to your organization.
+
+**Data freshness** refers to how up-to-date the data in a data source is. Different types of data sources have different requirements or expectations for data freshness.
 {% endtab %}
 
 {% tab title="Analysis" %}
