@@ -301,6 +301,60 @@ If you usually retrieve the most recent records first, you can use a **reversed 
 
 For information specifically about working with time series data, see [Schema design for time series data](https://cloud.google.com/bigtable/docs/schema-design-time-series).
 
+### Hot-spotting
+
+Hot-spotting is a situation in which a specific subset of rows in a Bigtable table becomes the target of a high volume of read and write requests. This can lead to performance bottlenecks and even data loss.
+
+There are a few reasons why hot-spotting can occur in BigTable:
+
+1. **Improper Row Key Design:** A poorly designed row key can inadvertently concentrate traffic on a small subset of rows. For instance, if the row key consists of only a single column, it will force all read and write requests for that column to be directed to the same set of rows.
+2. **Application Logic:** If applications consistently access the same subset of data, it can also lead to hotspotting. This is particularly common in applications that perform frequent queries against a limited range of data.
+3. **Data Distribution:** If data is not evenly distributed across the storage nodes of a Bigtable cluster, it can result in hotspotting as requests for specific data are directed to the same nodes.
+
+To avoid hot-spotting in BigTable, it's important to consider the following approaches:
+
+1. **Proper Row Key Design:** Design the row key to be more granular, incorporating multiple columns to distribute data across a wider range of rows. This will spread out read and write requests and reduce the likelihood of hot-spotting.
+2. **Load-Balancing:** Implement load-balancing techniques to distribute read and write requests across multiple nodes in the Bigtable cluster. This will prevent a single node from becoming overloaded.
+3. **Data Partitioning:** Partition large tables into smaller subtables based on certain criteria, such as time or data type. This will distribute data across multiple tables and reduce the impact of hotspotting on individual tables.
+4. **Application Optimization:** Analyze application queries to identify potential hotspots and optimize them to spread read and write requests across a wider range of data. This may involve using filters or aggregations to limit queries to specific subsets of data.
+5. **Data Replication:** Consider replicating data across multiple clusters to provide redundancy and improve read performance. This can help to alleviate the impact of hot-spotting on individual clusters.
+
+Regularly monitoring Bigtable usage metrics can help to identify potential hotspots and take preventive measures. By carefully designing the row key, load-balancing requests, partitioning data, optimizing applications, and considering data replication, you can effectively avoid hot-spotting and maintain optimal performance in Bigtable.
+
+### Understanding Performance
+
+Bigtable offers optimal latency when the CPU load for a cluster is under 70%. **For latency-sensitive applications, however, we recommend that you plan at least 2x capacity for your application's max Bigtable queries per second (QPS)**.
+
+**For **_**latency-sensitive applications**_** we recommend that you keep storage utilization per node below 60%.** If your dataset grows, add more nodes to maintain low latency.
+
+For applications that are not latency-sensitive, you can store more than 70% of the limit, as explained in [Storage per node](https://cloud.google.com/bigtable/quotas#storage-per-node).
+
+#### Causes of slower performance
+
+There are several factors that can cause Bigtable [to perform more slowly](https://cloud.google.com/bigtable/docs/performance#slower-perf) than the estimates shown above:
+
+* You read a large number of non-contiguous row keys or row ranges in a single read request
+* Your table's schema is not designed correctly.
+* The rows in your Bigtable table contain large amounts of data
+* The rows in your Bigtable table contain a very large number of cells
+* The cluster doesn't have enough nodes or short of storage
+* The Bigtable cluster was scaled up or scaled down recently.\
+  After the number of nodes in a cluster is increased, it can take up to **20 minutes** under load before you see a significant improvement in the cluster's performance.\
+  When you decrease the number of nodes in a cluster to scale down, try not to reduce the cluster size by **more than 10% in a 10-minute period** to minimize latency spikes.
+* The Bigtable cluster uses HDD disks.
+* There are issues with the network connection.
+* You are using replication but your application is using an out-of-date client library.
+* You enabled replication but didn't add more nodes to your clusters.
+
+#### Cold starts
+
+Bigtable performs best with large tables that are frequently accessed. For this reason, if you start sending requests after a period of no usage, you might observe high latency while Bigtable reestablishes connections.
+
+If you know that you will sometimes be sending requests to a Bigtable table after a period of inactivity, you can try the following strategies to keep your connection warm and prevent this high latency. These can also help performance during periods of low QPS.
+
+* Send a low rate of artificial traffic to the table at all times.
+* [Configure the connection pool to ensure that steady QPS keeps the pool active.](https://cloud.google.com/bigtable/docs/configure-connection-pools)
+
 ## Looker data cache and freshness&#x20;
 
 A **cache** is a temporary data storage system. Fetching cached data can be much faster than fetching it directly from the underlying data set, and it helps reduce the number of queries sent, decreasing costs to your organization.
