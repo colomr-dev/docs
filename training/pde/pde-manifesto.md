@@ -29,6 +29,47 @@ A proprietary data architecture that combines the characteristics of data lakes 
 ## Business Glossary&#x20;
 
 Business glossary provides a single place to maintain and manage business-related terminology and definitions across the organisation. It lets you attach the terms to the columns of cataloged data entries.
+
+## Security & Compliance
+
+### Encryption and key management
+
+Cloud Key Management Service allows you to create, import, and manage cryptographic keys and perform cryptographic operations in a single centralized cloud service. You can use these keys and perform these operations by using Cloud KMS directly, by using Cloud HSM or Cloud External Key Manager, or by using Customer-Managed Encryption Keys (CMEK) integrations within other Google Cloud services.
+
+With Cloud KMS you are the ultimate custodian of your data, you can manage cryptographic keys in the cloud in the same ways you do on-premises, and you have a provable and monitorable root of trust over your data.
+
+{% embed url="https://cloud.google.com/kms/docs" %}
+
+Encryption is a crucial aspect of data security in Google Cloud Platform (GCP). It protects data from unauthorized access, modification, and disclosure by converting it into an unreadable format using a cryptographic algorithm. Key management ensures the secure storage, retrieval, and rotation of encryption keys, which are the essential components of encryption.
+
+### **Types of encryption in GCP**
+
+GCP offers various encryption types to secure data at different stages of its lifecycle, including:
+
+* **Data at rest:** Encrypts data stored on disk or in storage services like Cloud Storage, Cloud SQL, and BigQuery.
+* **Data in transit:** Encrypts data transmitted over the network, including data sent between applications and between GCP services.
+* **Data in use:** Encrypts data in memory while an application is processing it.
+
+#### **Cloud KMS (Key Management Service)**
+
+Cloud KMS is a centralized key management service that provides secure storage and management of encryption keys for GCP resources. It offers two types of key encryption keys (KEKs):
+
+* **Customer Managed Encryption Keys (CMEK):** Enables users to store and manage their own KEKs in Cloud KMS, providing greater control over encryption keys and adhering to specific compliance requirements.
+* **Google Managed Encryption Keys (GMEK):** Allows GCP to manage KEKs for users, providing simplicity and reducing operational overhead.
+
+#### **Encryption and key management for PDE exam preparation**
+
+Here are some key concepts to consider for the PDE exam:
+
+* **Understand the different types of encryption and their applications.**
+* **Know the role of Cloud KMS in managing encryption keys.**
+* **Distinguish between CMEK and GMEK and their suitability for different use cases.**
+* **Be familiar with GCP encryption features for data at rest, in transit, and in use.**
+* **Appraise the benefits and trade-offs of encryption and key management across GCP resources.**
+
+By understanding these concepts, you can effectively secure your data in GCP and prepare for questions related to encryption and key management on the PDE exam.\
+\
+
 {% endtab %}
 
 {% tab title="Processing" %}
@@ -370,4 +411,6 @@ A **cache** is a temporary data storage system. Fetching cached data can be much
 
 {% endtab %}
 {% endtabs %}
+
+
 
