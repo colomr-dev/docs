@@ -226,7 +226,12 @@ Different ways to partition a table:
     * `__UNPARTITIONED__`: Contains rows where the value of the partitioning column is earlier than 1960-01-01 or later than 2159-12-31.
 * [**Ingesting time**](https://cloud.google.com/bigquery/docs/partitioned-tables#ingestion\_time) partitioning\
   If your data might reach the limit of **4000 partitions** per table when using a finer time granularity, use a coarser granularity instead
-*
+
+### Partitioning vs Sharding
+
+Table sharding is the practice of storing data in multiple tables, using a naming prefix such as `[PREFIX]_YYYYMMDD`.
+
+Partitioning is recommended over table sharding, because partitioned tables perform better. With sharded tables, BigQuery must maintain a copy of the schema and metadata for each table. BigQuery might also need to verify permissions for each queried table. This practice also adds to query overhead and affects query performance.
 {% endtab %}
 
 {% tab title="Analysis" %}
