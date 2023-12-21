@@ -8,21 +8,42 @@ description: Mantras to be memorised for the exam
 
 {% tabs %}
 {% tab title="Generic" %}
-## Data Lake
+## Big Data Concepts
+
+### Data Lake
 
 A large, centralised repository that stores raw data in its native format, without being transformed or structured for specific analysis. Data lakes are designed to accommodate a wide variety of data types, including structured, semi-structured, and unstructured data.
 
-## Data Mesh
+### Data Mesh
 
 A modern data architecture that distributes data ownership and management across domain-specific teams. Each team owns and manages the data that is relevant to their domain, and they are responsible for ensuring that the data is accurate, consistent, and up-to-date.
 
-## Big Lake
+### Big Lake
 
 A unified data platform that integrates data lakes, data warehouses, and data streams into a single architecture. Big Lake makes it possible to store, analyse, and process data from all sources using a variety of tools and technologies.
 
-## House Lake
+### House Lake
 
 A proprietary data architecture that combines the characteristics of data lakes and data warehouses. House lakes store data in a structured format, but they also allow for the storage of raw, unprocessed data. This hybrid approach provides the benefits of both data lakes and data warehouses, making it a good option for organisations that need a flexible and scalable data platform.&#x20;
+
+## Cloud Logging Sinks
+
+Sinks control how Cloud Logging routes logs. Using sinks, you can route some or all of your logs to [supported destinations](https://cloud.google.com/logging/docs/routing/overview#destinations). Some of the reasons that you might want to control how your logs are routed.
+
+Different types of sinks that exist in Google Cloud Platform (GCP):
+
+1. **Basic Sink:** The most basic type of sink, which routes log entries to a specific destination, such as Cloud Storage, BigQuery, or Pub/Sub.
+2. **Aggregated Sink:** A sink that combines log entries from multiple resources or projects into a single stream, making it easier to manage and analyze large volumes of logs.
+3. **Custom Sink:** A sink that allows you to write your own code to process and route log entries to a custom destination. This provides greater flexibility and control over how log data is handled.
+4. **Log Router:** A more advanced sink that allows you to define complex routing rules based on log entry attributes, such as log level, source resource, or log message content. This enables more granular control over how log entries are distributed to different destinations.
+5. **Log Bucket Sink:** A sink that routes log entries to a Cloud Storage bucket. This is a common option for storing and analyzing logs, as Cloud Storage is a highly scalable and durable storage service.
+6. **BigQuery Sink:** A sink that routes log entries to a BigQuery dataset. This is a good option for performing complex analysis on logs using SQL queries.
+7. **Pub/Sub Sink:** A sink that routes log entries to a Pub/Sub topic. This allows you to consume log entries in real time using Pub/Sub subscribers, such as Cloud Functions or Cloud Run services.
+8. **Dead Letter Sink:** A sink that routes log entries that cannot be delivered to their intended destination to a separate location. This helps to prevent log loss and ensures that all logs are accounted for.
+9. **Error Reporting Sink:** A sink that routes error reports from your applications to Error Reporting. This provides centralized visibility into application errors and helps you to debug and troubleshoot issues.
+10. **Tracing Sink:** A sink that routes tracing data from your applications to Cloud Trace. This helps you to understand the flow of requests through your distributed systems and identify performance bottlenecks.
+
+The type of sink you choose will depend on your specific needs and requirements. For example, if you need to store logs for long-term analysis, you might use a Cloud Storage sink. If you need to perform real-time analysis on logs, you might use a Pub/Sub sink. And if you need to route logs to a custom destination, you might use a custom sink.
 {% endtab %}
 
 {% tab title="Governance & Security" %}
