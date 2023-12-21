@@ -406,7 +406,6 @@ A **cache** is a temporary data storage system. Fetching cached data can be much
 {% tab title="Analysis" %}
 In a big data pipeline deployed on GCP, data warehousing and business intelligence (BI)/visualization are primarily handled by two products: BigQuery and Looker. This combination has been designed by Google to provide a modern data warehouse solution that is scalable, performant, and easy to use
 
-\
 Yes, you are correct. In a big data pipeline deployed on GCP, data warehousing and business intelligence (BI)/visualization are primarily handled by two products: BigQuery and Looker. This combination has been designed by Google to provide a modern data warehouse solution that is scalable, performant, and easy to use.
 
 **BigQuery** is a serverless, petabyte-scale data warehouse that is fully managed by Google. This means that you do not need to worry about provisioning or managing servers, storage, or networking. You simply load your data into BigQuery, and it will automatically be processed and stored for analysis.
@@ -417,9 +416,13 @@ Together, BigQuery and Looker provide a powerful and easy-to-use solution for da
 
 ## BigQuery Data Warehouse &#x20;
 
-### Big Query ML Models
+###
+{% endtab %}
 
-#### Internally trained models
+{% tab title="Automation & ML" %}
+## Big Query ML Models
+
+### Internally trained models
 
 The following models are built in to BigQuery ML:
 
@@ -432,7 +435,7 @@ The following models are built in to BigQuery ML:
 
 You can perform a [dry run](https://cloud.google.com/bigquery/docs/running-queries#dry-run) on the `CREATE MODEL` statements for internally trained models to get an estimate of how much data they will process if you run them.
 
-#### Externally trained models
+### Externally trained models
 
 The following models are external to BigQuery ML and trained in Vertex AI:
 
@@ -445,15 +448,11 @@ The following models are external to BigQuery ML and trained in Vertex AI:
 
 You can't perform a [dry run](https://cloud.google.com/bigquery/docs/running-queries#dry-run) on the `CREATE MODEL` statements for externally trained models to get an estimate of how much data they will process if you run them
 
-#### Remote models
+### Remote models
 
 You can create [remote models](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-remote-model#endpoint) in BigQuery that use models deployed to [Vertex AI](https://cloud.google.com/vertex-ai/docs). You reference the deployed model by specifying the model's [HTTPS endpoint](https://cloud.google.com/vertex-ai/docs/general/deployment#what\_happens\_when\_you\_deploy\_a\_model) in the remote model's `CREATE MODEL` statement.
 
 The `CREATE MODEL` statements for remote models don't process any bytes and don't incur BigQuery charges.
-{% endtab %}
-
-{% tab title="Automation & ML" %}
-
 {% endtab %}
 {% endtabs %}
 
