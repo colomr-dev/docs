@@ -75,9 +75,11 @@ R: Approximately 5 MB
 
 <details>
 
-<summary></summary>
+<summary>Q: Is possible store data by using the preemtible node works build-in storage?</summary>
 
+A: Preemptible worker nodes do not have persistent disks. This means that you cannot store data on the worker nodes themselves. Instead, you will need to store your data in Cloud Storage and use the HDFS connector to access it from your worker nodes.
 
+[https://cloud.google.com/dataproc/docs/concepts/compute/secondary-vms](https://cloud.google.com/dataproc/docs/concepts/compute/secondary-vms)
 
 </details>
 
