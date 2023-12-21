@@ -12,6 +12,7 @@
 
 * [✍ Exam Key Concepts](pde/exam-key-concepts.md)
 * [🪨 PDE Manifesto](pde/pde-manifesto.md)
+* [🃏 PDE Flashcards](pde/pde-flashcards.md)
 * [Data Analytics Pipeline](pde/data-analytics-pipeline.md)
 * [Products Comparison](pde/products-comparison.md)
 * [Apache Beam](pde/apache-beam.md)
