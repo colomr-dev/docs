@@ -85,9 +85,11 @@ A: Preemptible worker nodes do not have persistent disks. This means that you ca
 
 <details>
 
-<summary></summary>
+<summary>A: You can create a Dataproc cluster with internal IP addresses only by using which flag?</summary>
 
+the [`gcloud dataproc clusters create`](https://cloud.google.com/sdk/gcloud/reference/dataproc/clusters/create) command with the `‑‑no-address` flag.
 
+[https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/network#create\_a\_cluster\_with\_internal\_ip\_addresses\_only](https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/network#create\_a\_cluster\_with\_internal\_ip\_addresses\_only)
 
 </details>
 
