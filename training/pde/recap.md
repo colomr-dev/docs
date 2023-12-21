@@ -323,7 +323,11 @@ BigQuery supports the following data formats and compression types for exported 
 
 <table><thead><tr><th width="160.66666666666666">Data format</th><th width="192">Compression types</th><th>Details</th></tr></thead><tbody><tr><td>CSV</td><td>GZIP</td><td><p>You can control the CSV delimiter in your exported data by using the <a href="https://cloud.google.com/bigquery/docs/reference/bq-cli-reference#bq_extract"><code>--field_delimiter</code></a> bq command-line tool flag or the <a href="https://cloud.google.com/bigquery/docs/reference/rest/v2/Job#jobconfigurationextract"><code>configuration.extract.fieldDelimiter</code></a> extract job property.</p><p>Nested and repeated data is not supported.</p></td></tr><tr><td>JSON</td><td>GZIP</td><td>Nested and repeated data are supported.</td></tr><tr><td>Avro</td><td>DEFLATE, SNAPPY</td><td><p>GZIP is not supported for Avro exports.</p><p>Nested and repeated data are supported. See <a href="https://cloud.google.com/bigquery/docs/exporting-data#avro_export_details">Avro export details</a>.</p></td></tr><tr><td>Parquet</td><td>SNAPPY, GZIP, ZSTD</td><td>Nested and repeated data are supported. See <a href="https://cloud.google.com/bigquery/docs/exporting-data#parquet_export_details">Parquet export details</a>.</td></tr></tbody></table>
 
-\
+### Data Skew
+
+Partition skew, sometimes called data skew, is when data is partitioned into very unequally sized partitions. This creates an imbalance in the amount of data sent between slots. You can't share partitions between slots, so if one partition is especially large, it can slow down, or even crash the slot that processes the oversized partition.
+
+To address data skew, it's important to identify the partitions that are causing the imbalance and implement strategies to distribute the data more evenly. This can be done through repartitioning, partition pruning, adjusting data loading or update strategies, optimizing data storage formats, and configuring partition expiration.\
 
 
 ## BigTable&#x20;
@@ -508,7 +512,21 @@ Together, BigQuery and Looker provide a powerful and easy-to-use solution for da
 
 ## BigQuery Data Warehouse &#x20;
 
-###
+## Looker Studio
+
+### Types of fields <a href="#kinds-of-data-source-fields" id="kinds-of-data-source-fields"></a>
+
+A data source can contain the following kinds of fields:
+
+* **Dimensions** describe or categorize your data. Dimensions contain unaggregated data. Dimensions appear as green fields in the data source editor and report properties panel.\
+  Adding dimensions to a chart groups the data by those dimensions. _Campaign name_, _Product ID_, and _Country_ are all examples of dimensions you might use to group the information in a chart. Note that any type of data can be a dimension, including a column of unaggregated numbers.
+* **Metrics** measure your dimensions. Metrics contain aggregated data. Metrics appear as blue fields in the data source editor and report properties panel.\
+  A metric is the result of applying an aggregation to a set of values,. That aggregation could come from the underlying data set, or be the result of implicitly or explicitly applying an aggregation function, such as COUNT(), SUM(), or AVG().
+* **Calculated fields** are fields you create by applying functions, operators, and/or branching logic to your data. A calculated field appears as metric or dimension depending on the output of the formula.
+* **Parameters** store user-defined data. You can use parameters to customize or personalize your reports and data sources based on user input or variables defined in the underlying data set, such as a BigQuery custom query parameter.
+
+\
+
 {% endtab %}
 
 {% tab title="Automation & ML" %}
