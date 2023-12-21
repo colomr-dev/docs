@@ -317,7 +317,13 @@ Here is a table summarizing the different types of pseudo-columns in BigQuery:
 | Processing-time | Provide information about when the query was processed             | `_ROWTIME`, `_QUERY_ID`, `_TABLE_SCHEMA_VERSION`    |
 | Internal        | Provide information about the internal workings of BigQuery        | `_TABLE_ID`, `_QUERY_START_TIME`, `_QUERY_STATUS`   |
 
-tunesharemore\_vertadd\_photo\_alternate\
+### Export formats and compression types
+
+BigQuery supports the following data formats and compression types for exported data.
+
+<table><thead><tr><th width="160.66666666666666">Data format</th><th width="192">Compression types</th><th>Details</th></tr></thead><tbody><tr><td>CSV</td><td>GZIP</td><td><p>You can control the CSV delimiter in your exported data by using the <a href="https://cloud.google.com/bigquery/docs/reference/bq-cli-reference#bq_extract"><code>--field_delimiter</code></a> bq command-line tool flag or the <a href="https://cloud.google.com/bigquery/docs/reference/rest/v2/Job#jobconfigurationextract"><code>configuration.extract.fieldDelimiter</code></a> extract job property.</p><p>Nested and repeated data is not supported.</p></td></tr><tr><td>JSON</td><td>GZIP</td><td>Nested and repeated data are supported.</td></tr><tr><td>Avro</td><td>DEFLATE, SNAPPY</td><td><p>GZIP is not supported for Avro exports.</p><p>Nested and repeated data are supported. See <a href="https://cloud.google.com/bigquery/docs/exporting-data#avro_export_details">Avro export details</a>.</p></td></tr><tr><td>Parquet</td><td>SNAPPY, GZIP, ZSTD</td><td>Nested and repeated data are supported. See <a href="https://cloud.google.com/bigquery/docs/exporting-data#parquet_export_details">Parquet export details</a>.</td></tr></tbody></table>
+
+\
 
 
 ## BigTable&#x20;
