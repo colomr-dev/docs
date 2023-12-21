@@ -295,6 +295,31 @@ Table sharding is the practice of storing data in multiple tables, using a namin
 
 Partitioning is recommended over table sharding, because partitioned tables perform better. With sharded tables, BigQuery must maintain a copy of the schema and metadata for each table. BigQuery might also need to verify permissions for each queried table. This practice also adds to query overhead and affects query performance.
 
+#### Pseudo-columns
+
+ou could think of pseudo-columns as system columns in the context of transactional databases. In transactional databases, system tables are special tables that contain metadata about the database itself, such as the table names, column names, and data types.
+
+Similarly, pseudo-columns are special columns in BigQuery that provide metadata about the data in BigQuery tables. They are not part of the table schema, but they are available to all tables and can be used in queries.
+
+Here is a table summarizing the similarities between pseudo-columns and system columns:
+
+| Feature | Pseudo-column               | System column                       |
+| ------- | --------------------------- | ----------------------------------- |
+| Purpose | Provide metadata about data | Provide metadata about the database |
+| Scope   | Available to all tables     | Available to specific tables        |
+| Usage   | Used in queries             | Used for administrative tasks       |
+
+Here is a table summarizing the different types of pseudo-columns in BigQuery:
+
+| Group           | Purpose                                                            | Pseudo-columns                                      |
+| --------------- | ------------------------------------------------------------------ | --------------------------------------------------- |
+| Ingestion-time  | Provide information about when the data was ingested into BigQuery | `_PARTITIONTIME`, `_PARTITIONDATE`, `_TABLE_SUFFIX` |
+| Processing-time | Provide information about when the query was processed             | `_ROWTIME`, `_QUERY_ID`, `_TABLE_SCHEMA_VERSION`    |
+| Internal        | Provide information about the internal workings of BigQuery        | `_TABLE_ID`, `_QUERY_START_TIME`, `_QUERY_STATUS`   |
+
+tunesharemore\_vertadd\_photo\_alternate\
+
+
 ## BigTable&#x20;
 
 ### Schema Design (best practices)
@@ -417,7 +442,7 @@ If you know that you will sometimes be sending requests to a Bigtable table afte
 * Send a low rate of artificial traffic to the table at all times.
 * [Configure the connection pool to ensure that steady QPS keeps the pool active.](https://cloud.google.com/bigtable/docs/configure-connection-pools)
 
-### Big Table Replication
+### Replication
 
 This page describes some common use cases for enabling Cloud Bigtable replication, then presents the settings you can use to support these use cases.
 
@@ -429,7 +454,7 @@ This page describes some common use cases for enabling Cloud Bigtable replicatio
 
 This page also explains how to decide [what settings to use if your use case isn't listed here](https://cloud.google.com/bigtable/docs/replication-settings#other).
 
-### Big Table Routing Policy
+### Routing Policy
 
 When you send requests from an application to Cloud Bigtable, you use an [app profile](https://cloud.google.com/bigtable/docs/app-profiles) that tells Bigtable how to handle the requests. The app profile specifies the _routing policy_ for the requests. For instances that use replication, the routing policy controls which clusters receive the requests and how failovers are handled.
 
