@@ -2,7 +2,7 @@
 description: Mantras to be memorised for the exam
 ---
 
-# 🪨 PDE Manifesto
+# 🔖 PDE Recap
 
 
 

@@ -10,8 +10,8 @@
 
 ## 📊 PDE Certification <a href="#pde" id="pde"></a>
 
-* [✍ Exam Key Concepts](pde/exam-key-concepts.md)
-* [🪨 PDE Manifesto](pde/pde-manifesto.md)
+* [✍ Key Concepts](pde/key-concepts.md)
+* [🔖 PDE Recap](pde/pde-recap.md)
 * [🃏 PDE Flashcards](pde/pde-flashcards.md)
 * [Data Analytics Pipeline](pde/data-analytics-pipeline.md)
 * [Products Comparison](pde/products-comparison.md)
