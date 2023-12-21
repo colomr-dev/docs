@@ -50,17 +50,26 @@ A: Using the NOW() function can significantly impact query performance and cost,
 
 <summary>Q: <strong>What are the two main steps involved in copying data between tables in BigQuery using a SELECT statement?</strong></summary>
 
-A: Create a new table schema and insert data from existing dataset to the new one using `INSERT SELECT` statement.
+A: Create a new table schema and insert data from existing dataset to the new one using `INSERT SELECT` statement
 
-[https://blog.coupler.io/how-to-copy-bigquery-table/](https://blog.coupler.io/how-to-copy-bigquery-table/)&#x20;
+As of  `21 December 2023` the most convenient way to clone BigQuery tables is by using CLONE instead SELECT \
+[https://cloud.google.com/bigquery/docs/table-clones-create](https://cloud.google.com/bigquery/docs/table-clones-create)
+
+```sql
+CREATE TABLE
+myproject.myDataset_backup.myTableClone
+CLONE myproject.myDataset.myTable;
+```
 
 </details>
 
 <details>
 
-<summary></summary>
+<summary><strong>Q: What is the maximum amount of data that a BigQuery JavaScript UDF can output when processing a single row?</strong></summary>
 
+R: Approximately 5 MB
 
+[https://cloud.google.com/bigquery/quotas#udf\_limits](https://cloud.google.com/bigquery/quotas#udf\_limits)
 
 </details>
 
