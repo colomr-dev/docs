@@ -499,7 +499,7 @@ A **cache** is a temporary data storage system. Fetching cached data can be much
 **Data freshness** refers to how up-to-date the data in a data source is. Different types of data sources have different requirements or expectations for data freshness.
 {% endtab %}
 
-{% tab title="Analysis" %}
+{% tab title="Analysis & BI" %}
 In a big data pipeline deployed on GCP, data warehousing and business intelligence (BI)/visualization are primarily handled by two products: BigQuery and Looker. This combination has been designed by Google to provide a modern data warehouse solution that is scalable, performant, and easy to use
 
 Yes, you are correct. In a big data pipeline deployed on GCP, data warehousing and business intelligence (BI)/visualization are primarily handled by two products: BigQuery and Looker. This combination has been designed by Google to provide a modern data warehouse solution that is scalable, performant, and easy to use.
