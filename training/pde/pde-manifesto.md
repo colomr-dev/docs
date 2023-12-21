@@ -415,15 +415,49 @@ Yes, you are correct. In a big data pipeline deployed on GCP, data warehousing a
 
 Together, BigQuery and Looker provide a powerful and easy-to-use solution for data warehousing and BI/visualization on GCP. This combination is ideal for organizations of all sizes that need to analyze large volumes of data.
 
-## BigQuery Data Warehouse
+## BigQuery Data Warehouse &#x20;
 
+### Big Query ML Models
 
+#### Internally trained models
+
+The following models are built in to BigQuery ML:
+
+* [Linear regression](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-glm) is for forecasting. For example, this model forecasts the sales of an item on a given day. Labels are real-valued, meaning they cannot be positive infinity or negative infinity or a NaN (Not a Number).
+* [Logistic regression](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-glm) is for the classification of two or more possible values such as whether an input is `low-value`, `medium-value`, or `high-value`. Labels can have up to 50 unique values.
+* [K-means clustering](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-kmeans) is for data segmentation. For example, this model identifies customer segments. K-means is an unsupervised learning technique, so model training doesn't require labels or split data for training or evaluation.
+* [Matrix factorization](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-matrix-factorization) is for creating product recommendation systems. You can create product recommendations using historical customer behavior, transactions, and product ratings, and then use those recommendations for personalized customer experiences.
+* [Principal component analysis (PCA)](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-pca) is the process of computing the principal components and using them to perform a change of basis on the data. It's commonly used for dimensionality reduction by projecting each data point onto only the first few principal components to obtain lower-dimensional data while preserving as much of the data's variation as possible.
+* [Time series](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-time-series) is for performing time series forecasts. You can use this feature to create millions of time series models and use them for forecasting. The model automatically handles anomalies, seasonality, and holidays.
+
+You can perform a [dry run](https://cloud.google.com/bigquery/docs/running-queries#dry-run) on the `CREATE MODEL` statements for internally trained models to get an estimate of how much data they will process if you run them.
+
+#### Externally trained models
+
+The following models are external to BigQuery ML and trained in Vertex AI:
+
+* [Deep neural network (DNN)](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-dnn-models) is for creating TensorFlow-based deep neural networks for [classification](https://www.tensorflow.org/api\_docs/python/tf/estimator/DNNClassifier) and [regression](https://www.tensorflow.org/api\_docs/python/tf/estimator/DNNRegressor) models.
+* [Wide & Deep](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-wnd-models) is useful for generic large-scale regression and classification problems with sparse inputs ([categorical features](https://en.wikipedia.org/wiki/Categorical\_variable) with a large number of possible feature values), such as recommender systems, search, and ranking problems.
+* [Autoencoder](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-autoencoder) is for creating TensorFlow-based models with the support of sparse data representations. You can use the models in BigQuery ML for tasks such as unsupervised anomaly detection and non-linear dimensionality reduction.
+* [Boosted Tree](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-boosted-tree) is for creating classification and regression models that are based on [XGBoost](https://xgboost.readthedocs.io/en/latest/).
+* [Random forest](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-random-forest) is for constructing multiple learning method decision trees for classification, regression, and other tasks at training time.
+* [AutoML](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-automl) is a supervised ML service that builds and deploys classification and regression models on tabular data at high speed and scale.
+
+You can't perform a [dry run](https://cloud.google.com/bigquery/docs/running-queries#dry-run) on the `CREATE MODEL` statements for externally trained models to get an estimate of how much data they will process if you run them
+
+#### Remote models
+
+You can create [remote models](https://cloud.google.com/bigquery/docs/reference/standard-sql/bigqueryml-syntax-create-remote-model#endpoint) in BigQuery that use models deployed to [Vertex AI](https://cloud.google.com/vertex-ai/docs). You reference the deployed model by specifying the model's [HTTPS endpoint](https://cloud.google.com/vertex-ai/docs/general/deployment#what\_happens\_when\_you\_deploy\_a\_model) in the remote model's `CREATE MODEL` statement.
+
+The `CREATE MODEL` statements for remote models don't process any bytes and don't incur BigQuery charges.
 {% endtab %}
 
 {% tab title="Automation & ML" %}
 
 {% endtab %}
 {% endtabs %}
+
+
 
 
 
