@@ -10,8 +10,8 @@
 
 ## 📊 PDE Certification <a href="#pde" id="pde"></a>
 
-* [✍ Key Concepts](pde/key-concepts.md)
-* [🔖 PDE Recap](pde/pde-recap.md)
+* [✍ Key Concepts](pde/exam-key-concepts.md)
+* [🔖 PDE Recap](pde/pde-manifesto.md)
 * [🃏 PDE Flashcards](pde/pde-flashcards.md)
 * [Data Analytics Pipeline](pde/data-analytics-pipeline.md)
 * [Products Comparison](pde/products-comparison.md)
@@ -22,4 +22,4 @@
 
 ## 👨💻 PCD CERTIFICATION <a href="#pcd" id="pcd"></a>
 
-* [✍ Exam Key Concepts (draft)](pcd/exam-key-concepts-draft.md)
+* [✍ Key Concepts (draft)](pcd/key-concepts-draft.md)
