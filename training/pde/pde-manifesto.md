@@ -417,6 +417,46 @@ If you know that you will sometimes be sending requests to a Bigtable table afte
 * Send a low rate of artificial traffic to the table at all times.
 * [Configure the connection pool to ensure that steady QPS keeps the pool active.](https://cloud.google.com/bigtable/docs/configure-connection-pools)
 
+### Big Table Replication
+
+This page describes some common use cases for enabling Cloud Bigtable replication, then presents the settings you can use to support these use cases.
+
+* [Isolate batch analytics workloads from other applications](https://cloud.google.com/bigtable/docs/replication-settings#batch-vs-serve)
+* [Create high availability](https://cloud.google.com/bigtable/docs/replication-settings#high-availability)
+* [Provide near-real-time backup](https://cloud.google.com/bigtable/docs/replication-settings#backup)
+* [Maintain high availability and regional resilience](https://cloud.google.com/bigtable/docs/replication-settings#regional-failover)
+* [Store data close to your users](https://cloud.google.com/bigtable/docs/replication-settings#near-users)
+
+This page also explains how to decide [what settings to use if your use case isn't listed here](https://cloud.google.com/bigtable/docs/replication-settings#other).
+
+### Big Table Routing Policy
+
+When you send requests from an application to Cloud Bigtable, you use an [app profile](https://cloud.google.com/bigtable/docs/app-profiles) that tells Bigtable how to handle the requests. The app profile specifies the _routing policy_ for the requests. For instances that use replication, the routing policy controls which clusters receive the requests and how failovers are handled.
+
+**Single-cluster routing:**
+
+This is the simplest routing option and is the default for Bigtable. In single-cluster routing, all requests are sent to a single clúster of Bigtable. This is a good option for applications that require a high degree of consistency and durability, as well as for applications that do not require a lot of geographic distribution.
+
+**Multi-cluster routing:**
+
+This routing option allows you to split your Bigtable data across multiple clústeres. This can be useful for applications that require a high degree of scalability or availability, as well as for applications that need to store data in multiple regions.
+
+**Any cluster routing:**
+
+This routing option allows you to send requests to any clúster of Bigtable that can handle the request. This is a good option for applications that do not require a high degree of consistency or durability, as well as for applications that need to dynamically route requests to the most available cluster.
+
+Here is a table that summarizes the pros and cons of each routing option:
+
+| Routing option         | Pros                                       | Cons                                            |
+| ---------------------- | ------------------------------------------ | ----------------------------------------------- |
+| Single-cluster routing | Simple, high consistency, high durability  | Not scalable, not available in multiple regions |
+| Multi-cluster routing  | Scalable, available in multiple regions    | Lower consistency, lower durability             |
+| Any cluster routing    | Dynamic routing, no consistency guarantees | Not as scalable as multi-cluster routing        |
+
+The best routing option for your application will depend on your specific needs.
+
+{% embed url="https://cloud.google.com/bigtable/docs/routing" %}
+
 ## Looker data cache and freshness&#x20;
 
 A **cache** is a temporary data storage system. Fetching cached data can be much faster than fetching it directly from the underlying data set, and it helps reduce the number of queries sent, decreasing costs to your organization.
