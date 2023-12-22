@@ -85,9 +85,9 @@ A: Preemptible worker nodes do not have persistent disks. This means that you ca
 
 <details>
 
-<summary>A: You can create a Dataproc cluster with internal IP addresses only by using which flag?</summary>
+<summary>Q: You can create a Dataproc cluster with internal IP addresses only by using which flag?</summary>
 
-the [`gcloud dataproc clusters create`](https://cloud.google.com/sdk/gcloud/reference/dataproc/clusters/create) command with the `‑‑no-address` flag.
+A: The [`gcloud dataproc clusters create`](https://cloud.google.com/sdk/gcloud/reference/dataproc/clusters/create) command with the `‑‑no-address` flag.
 
 [https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/network#create\_a\_cluster\_with\_internal\_ip\_addresses\_only](https://cloud.google.com/dataproc/docs/concepts/configuring-clusters/network#create\_a\_cluster\_with\_internal\_ip\_addresses\_only)
 
@@ -95,17 +95,21 @@ the [`gcloud dataproc clusters create`](https://cloud.google.com/sdk/gcloud/refe
 
 <details>
 
-<summary></summary>
+<summary>Q: Which action would you undertake when you need to encrypt data at rest with encryption keys that you can create, rotate and destroy as needed?</summary>
 
+A: Create encryption keys in Cloud Key Management Service (KMS). Use those keys to encrypt your data as needed.
 
+[https://cloud.google.com/kms/docs/key-management-service](https://cloud.google.com/kms/docs/key-management-service)
 
 </details>
 
 <details>
 
-<summary></summary>
+<summary>Q: How is named the tool that helps you analyze your Bigtable usage patterns?</summary>
 
+A: Key Visualizer tool
 
+[https://cloud.google.com/bigtable/docs/keyvis-overview](https://cloud.google.com/bigtable/docs/keyvis-overview)
 
 </details>
 
