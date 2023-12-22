@@ -13,6 +13,7 @@
 * [✍ PDE Key Concepts](pde/exam-key-concepts.md)
 * [🔖 PDE Recap](pde/pde-manifesto.md)
 * [🃏 PDE Flashcards](pde/pde-flashcards.md)
+* [🤖 PDE Chats with Bard](pde/bard.md)
 * [Data Analytics Pipeline](pde/data-analytics-pipeline.md)
 * [Products Comparison](pde/products-comparison.md)
 * [Apache Beam](pde/apache-beam.md)
