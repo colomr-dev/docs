@@ -115,6 +115,40 @@ A: Key Visualizer tool
 
 <details>
 
+<summary>Q: Which is the maximum number of partitions per partitioned table in BigQuery?</summary>
+
+A: 4.000 partitions&#x20;
+
+[https://cloud.google.com/bigquery/quotas#partitioned\_tables](https://cloud.google.com/bigquery/quotas#partitioned\_tables)
+
+</details>
+
+<details>
+
+<summary></summary>
+
+
+
+</details>
+
+<details>
+
+<summary></summary>
+
+
+
+</details>
+
+<details>
+
+<summary></summary>
+
+
+
+</details>
+
+<details>
+
 <summary></summary>
 
 
