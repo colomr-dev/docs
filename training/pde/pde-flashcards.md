@@ -125,9 +125,13 @@ A: 4.000 partitions&#x20;
 
 <details>
 
-<summary></summary>
+<summary>Q: Which actions are able to run a BigQuery Job?</summary>
 
+A: Jobs run for all BigQuery actions including loading, exporting, querying or copying data
 
+[https://cloud.google.com/bigquery/docs/jobs-overview](https://cloud.google.com/bigquery/docs/jobs-overview)
+
+[https://www.youtube.com/watch?v=fcf7w5D3zU4](https://www.youtube.com/watch?v=fcf7w5D3zU4)&#x20;
 
 </details>
 
