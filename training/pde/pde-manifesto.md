@@ -96,7 +96,7 @@ By understanding these concepts, you can effectively secure your data in GCP and
 {% tab title="Processing" %}
 ## Datastream
 
-Change data capture integrates data by reading change events (inserts, updates, and deletes) from source databases and writing them to a data destination, so action can be taken. Datastream supports change streams from Oracle and MySQL databases into BigQuery, Cloud SQL, Cloud Storage, and Cloud Spanner, enabling real-time analytics, database replication, and other use cases.
+Change data capture integrates data by reading change events (inserts, updates, and deletes) from source databases and writing them to a data destination, so action can be taken. [Datastream](https://cloud.google.com/datastream/docs/overview) supports change streams from Oracle and MySQL databases into BigQuery, Cloud SQL, Cloud Storage, and Cloud Spanner, enabling real-time analytics, database replication, and other use cases.
 
 ## Dataproc Workflow Templates
 
