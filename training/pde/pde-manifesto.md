@@ -98,23 +98,27 @@ By understanding these concepts, you can effectively secure your data in GCP and
 
 Change data capture integrates data by reading change events (inserts, updates, and deletes) from source databases and writing them to a data destination, so action can be taken. [Datastream](https://cloud.google.com/datastream/docs/overview) supports change streams from Oracle and MySQL databases into BigQuery, Cloud SQL, Cloud Storage, and Cloud Spanner, enabling real-time analytics, database replication, and other use cases.
 
-## Dataproc Workflow Templates
+## Dataproc
+
+[**Dataproc**](https://cloud.google.com/dataproc/docs/concepts/overview) is a managed Spark and Hadoop service that lets you take advantage of open source data tools for batch processing, querying, streaming, and machine learning. Dataproc automation helps you create clusters quickly, manage them easily, and save money by turning clusters off when you don't need them. With less time and money spent on administration, you can focus on your jobs and your data.
+
+### Dataproc Workflow Templates
 
 Kinds of workflow templates:
 
-### Managed cluster
+#### Managed cluster
 
 A workflow template can specify a managed cluster. The workflow will create an "ephemeral" cluster to run workflow jobs, and then delete the cluster when the workflow is finished.
 
-### Cluster selector
+#### Cluster selector
 
 A workflow template can specify an existing cluster on which to run workflow jobs by specifying one or more user labels previously attached to the cluster. The workflow will run on a cluster that matches all of the labels. If multiple clusters match all labels, Dataproc selects the cluster with the most YARN available memory to run all workflow jobs.
 
-### Parameterized&#x20;
+#### Parameterized&#x20;
 
 If you will run a workflow template multiple times with different values, use parameters to avoid editing the workflow template for each run
 
-### Inline
+#### Inline
 
 Workflows can be instantiated inline using the gcloud command with workflow template YAML files or by calling the Dataproc Instantiate Inline API.
 
