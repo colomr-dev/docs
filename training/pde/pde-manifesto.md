@@ -301,7 +301,7 @@ Partitioning is recommended over table sharding, because partitioned tables perf
 
 ### Pseudo-columns
 
-You could think of pseudo-columns as system columns in the context of transactional databases. In transactional databases, system tables are special tables that contain metadata about the database itself, such as the table names, column names, and data types.
+You could think of pseudo-columns as system tables in the context of transactional databases. In transactional databases, system tables are special tables that contain metadata about the database itself, such as the table names, column names, and data types.
 
 Similarly, pseudo-columns are special columns in BigQuery that provide metadata about the data in BigQuery tables. They are not part of the table schema, but they are available to all tables and can be used in queries.
 
