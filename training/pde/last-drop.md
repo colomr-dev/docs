@@ -4,7 +4,7 @@ description: Last reinforcement a few days before the assessment
 
 # 🍺 PDE The Last Drop
 
-Concepts still weak that should be already completely rock-solid:
+Concepts still weak that should already be rock-solid:
 
 
 
