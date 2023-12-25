@@ -1,10 +1,10 @@
 ---
-description: Last reinforcement a few days to take the exam
+description: Last reinforcement a few days before the assessment
 ---
 
 # 🍺 PDE The Last Drop
 
-The following concepts must be completely clear as they are core topics
+Concepts still weak that should be already completely rock-solid:
 
 
 
