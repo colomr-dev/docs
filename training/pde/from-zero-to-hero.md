@@ -14,7 +14,7 @@ Please review the CEG, this guide provides comprehensive information about the e
 
 ## Personal study method&#x20;
 
-This study method is based on my personal experience, it is not a general formula that can be applied to all students; Each individual has a learning process and pace white a mixture of theory, practice and real situations to rock-solid the key concepts necessaries to pass the exam.
+This study method is based on my personal experience, it is not a general formula that can be applied to all students; Each individual has a learning process and pace on top of a mixture of theory, practice and real situations to rock-solid the key concepts necessaries to pass the exam.
 
 ## Check my GitHub to dig further
 
