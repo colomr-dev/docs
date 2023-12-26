@@ -10,6 +10,7 @@
 
 ## 📊 PDE Certification <a href="#pde" id="pde"></a>
 
+* [🦸 0 - From Zero to Hero](pde/from-zero-to-hero.md)
 * [✍ PDE Key Concepts](pde/exam-key-concepts.md)
 * [🔖 PDE Recap](pde/pde-manifesto.md)
 * [🃏 PDE Flashcards](pde/pde-flashcards.md)
