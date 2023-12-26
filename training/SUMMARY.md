@@ -15,7 +15,7 @@
 * [🃏 PDE Flashcards](pde/pde-flashcards.md)
 * [🤖 PDE Chats with Bard](pde/bard.md)
 * [🍺 PDE The Last Drop](pde/last-drop.md)
-* [📦 Miscellaneous](pde/misc/README.md)
+* [📦 Misc](pde/misc/README.md)
   * [Data Analytics Pipeline](pde/misc/data-analytics-pipeline.md)
   * [Products Comparison](pde/misc/products-comparison.md)
   * [Apache Beam](pde/misc/apache-beam.md)
