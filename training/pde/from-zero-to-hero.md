@@ -2,13 +2,13 @@
 description: The first step on the PDE certification journey starts here
 ---
 
-# 🦸 0 · From Zero to Hero
+# 🦸 0 · From zero (to hero)
 
 This is the first step, or maybe ZERO, to master the PDE certification exam.
 
 ## Certification Exam Guide (CEG)&#x20;
 
-This guide provides comprehensive information about the exam objectives, format, and scoring, as well as detailed study recommendations.
+Please review the CEG, this guide provides comprehensive information about the exam objectives, format, and scoring, as well as detailed study recommendations.
 
 {% embed url="https://cloud.google.com/learn/certification/guides/data-engineer" %}
 
