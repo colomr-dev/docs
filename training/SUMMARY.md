@@ -10,12 +10,12 @@
 
 ## 📊 PDE Certification <a href="#pde" id="pde"></a>
 
-* [🦸 0 - From Zero to Hero](pde/from-zero-to-hero.md)
-* [✍ PDE Key Concepts](pde/exam-key-concepts.md)
-* [🔖 PDE Recap](pde/pde-manifesto.md)
-* [🃏 PDE Flashcards](pde/pde-flashcards.md)
-* [🤖 PDE Chats with Bard](pde/bard.md)
-* [🍺 PDE The Last Drop](pde/last-drop.md)
+* [🦸 0 · From Zero to Hero](pde/from-zero-to-hero.md)
+* [✍ 1 · PDE Key Concepts](pde/exam-key-concepts.md)
+* [🔖 2 · PDE Recap](pde/pde-manifesto.md)
+* [🃏 3 · PDE Flashcards](pde/pde-flashcards.md)
+* [🤖 4 · PDE Chats with Bard](pde/bard.md)
+* [🍺 5 · PDE The Last Drop](pde/last-drop.md)
 * [📦 Misc](pde/misc/README.md)
   * [Data Analytics Pipeline](pde/misc/data-analytics-pipeline.md)
   * [Products Comparison](pde/misc/products-comparison.md)
