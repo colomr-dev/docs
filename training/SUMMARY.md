@@ -15,11 +15,12 @@
 * [🃏 PDE Flashcards](pde/pde-flashcards.md)
 * [🤖 PDE Chats with Bard](pde/bard.md)
 * [🍺 PDE The Last Drop](pde/last-drop.md)
-* [Data Analytics Pipeline](pde/data-analytics-pipeline.md)
-* [Products Comparison](pde/products-comparison.md)
-* [Apache Beam](pde/apache-beam.md)
-* [Parquet, Avro or ORC](pde/parquet-avro-or-orc.md)
-* [Data Lake, Data Mart, Data Lakehouse](pde/data-lake-data-mart-data-lakehouse.md)
+* [📦 Miscellaneous](pde/misc/README.md)
+  * [Data Analytics Pipeline](pde/misc/data-analytics-pipeline.md)
+  * [Products Comparison](pde/misc/products-comparison.md)
+  * [Apache Beam](pde/misc/apache-beam.md)
+  * [Parquet, Avro or ORC](pde/misc/parquet-avro-or-orc.md)
+  * [Data Lake, Data Mart, Data Lakehouse](pde/misc/data-lake-data-mart-data-lakehouse.md)
 
 ## 👨💻 PCD CERTIFICATION <a href="#pcd" id="pcd"></a>
 

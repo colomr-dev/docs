@@ -42,5 +42,5 @@ parquet-tools cat parquet.parquet
 
 {% embed url="https://parquet.apache.org/documentation/latest/" %}
 
-<figure><img src="../.gitbook/assets/Screenshot 2023-04-09 19.15.48.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2023-04-09 19.15.48.png" alt=""><figcaption></figcaption></figure>
 

@@ -18,7 +18,7 @@ Here are three main points to consider while trying to choose between Dataproc a
 
 This flowchart from the google website explains how to go about choosing one over the other.
 
-<figure><img src="../.gitbook/assets/flow-vs-proc-flowchart.svg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/flow-vs-proc-flowchart.svg" alt=""><figcaption></figcaption></figure>
 
 More info on this link\
 [https://stackoverflow.com/questions/46436794/what-is-the-difference-between-google-cloud-dataflow-and-google-cloud-dataproc](https://stackoverflow.com/questions/46436794/what-is-the-difference-between-google-cloud-dataflow-and-google-cloud-dataproc)&#x20;
