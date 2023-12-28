@@ -1,5 +1,5 @@
 ---
-description: Exam Tests Practice Platforms (AKA Exam Dumps)
+description: AKA Exam Dumps
 ---
 
 # ✅ Exams Practice Platforms
