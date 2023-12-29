@@ -4,7 +4,7 @@ description: The first step on the PCD certification journey starts here
 
 # 🦸 0 · From zero (to hero)
 
-This is the first step, or maybe ZERO, to master the PDE certification exam.
+This is the first step, or maybe ZERO, to master the PCD certification exam.
 
 ## Certification Exam Guide (CEG)&#x20;
 
