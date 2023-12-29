@@ -2,7 +2,7 @@
 description: Important concepts to master for the exam
 ---
 
-# ✍ PCD Key Concepts (draft)
+# ✍ 1 · PCD Key Concepts (draft)
 
 <table><thead><tr><th width="87" align="center">CEG*</th><th>Topic</th></tr></thead><tbody><tr><td align="center">1</td><td><ul><li></li></ul></td></tr><tr><td align="center">2</td><td><ul><li></li></ul></td></tr><tr><td align="center">3</td><td><ul><li></li></ul></td></tr><tr><td align="center">4</td><td></td></tr><tr><td align="center">5</td><td><ul><li></li></ul></td></tr><tr><td align="center">misc.</td><td><ul><li></li></ul></td></tr></tbody></table>
 
