@@ -18,7 +18,7 @@ This study method is based on my personal experience, it is not a general formul
 
 {% embed url="https://docs.preventa.tech/google/google-cloud/personal-study-method" %}
 
-## Check my GitHub to dig further
+## PDE Study Material (kanban)
 
 In my Github profile you can find these notes (and download them), the code repositories and the teaching material that I have used to prepare the certification: from books, labs, exam platforms or links to other interesting repositories from other students.
 
