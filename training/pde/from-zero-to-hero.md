@@ -16,7 +16,7 @@ Please review the CEG, this guide provides comprehensive information about the e
 
 This study method is based on my personal experience, it is not a general formula that can be applied to all students; Each individual has a learning process and pace on top of a mixture of theory, practice and real situations to rock-solid the key concepts necessaries to pass the exam.
 
-[#personal-study-method](from-zero-to-hero.md#personal-study-method "mention")
+{% embed url="https://docs.preventa.tech/google/google-cloud/personal-study-method" %}
 
 ## Check my GitHub to dig further
 
