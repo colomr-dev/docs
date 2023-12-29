@@ -25,4 +25,4 @@
 
 ## 👨💻 PCD CERTIFICATION <a href="#pcd" id="pcd"></a>
 
-* [✍ PCD Key Concepts (draft)](pcd/key-concepts-draft.md)
+* [✍ 0 · PCD Key Concepts (draft)](pcd/key-concepts-draft.md)
