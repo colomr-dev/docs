@@ -28,6 +28,6 @@
 ***
 
 * [🦸 0 · From zero (to hero)](from-zero-to-hero.md)
-* [✍ 1 · PCD Key Concepts (draft)](pcd/key-concepts-draft.md)
+* [✍ 1 · PCD Key Concepts](pcd/key-concepts-draft.md)
 * [📦 Misc](misc/README.md)
   * [Page 1](misc/page-1.md)
