@@ -11,7 +11,7 @@ description: My personal study method to clear Google certification exams
 This is a previous stage where I usually do a research on what the certification exam will cover. A good starting points to do so are:
 
 * Read the official **Certification Exam Guide** (CEG) carefully
-* Read the **most up-to-date book** on the certification we're going to prepare
+* Read the **most up-to-date book** on the certification to prepare
 * Explore **GitHub repositories** to find study **materials** and other **resources**
 
 After completing these steps we'll get a high-level overview of the main topics for the exam.
