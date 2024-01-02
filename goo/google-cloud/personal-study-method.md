@@ -13,6 +13,9 @@ This is a previous stage where I usually do a research on what the certification
 * Read the official **Certification Exam Guide** (CEG) carefully
 * Read the **most up-to-date book** on the certification to prepare
 * Explore **GitHub repositories** to find study **materials** and other **resources**
+* **Open a new GitHab project for tracking progress**
+
+{% embed url="https://github.com/fcolomer-dev?tab=projects" %}
 
 After completing these steps we'll get a high-level overview of the main topics for the exam.
 
