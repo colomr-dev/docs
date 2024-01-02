@@ -65,7 +65,7 @@ These lasts days we MUST do the following:
 * Intensify the number of practice tests per day
 * Capture and debug wrong responses
 * Identify concepts still weak&#x20;
-* Index weak points in "5 · XXX The Last Drop" document
+* Index weak points in "**5 · XXX The Last Drop**" document
 * Review all notes, documents, chats and oficial documentation&#x20;
 
 Good Luck!
