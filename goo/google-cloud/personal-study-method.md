@@ -20,7 +20,7 @@ After completing these steps we'll get a high-level overview of the main topics 
 
 Once we identified the main exam topics, it's time to get to work taking the corresponding _Learning Path_ in [**Cloud Skills Boost**](https://www.cloudskillsboost.google/). I suggest not missing any lab on this.
 
-And just when the Learning Path is done, we're in a good point to write down the documento "**1 · XXX Key Concepts**", this document is an index (with links) with the main concepts to master for the exam.
+And just when the Learning Path is done, we're in a good point to write down the documento "**1 · XXX Key Concepts**", this document is an index with the main concepts (and links) to master for the exam.
 
 ## Recap 🔖
 
@@ -32,7 +32,7 @@ By taking 5-10 tests, we may meter how short (or far) are from the **passing sco
 
 <figure><img src="../.gitbook/assets/yoda-png-transparent.png" alt="" width="150"><figcaption><p>Too much to learn I still have</p></figcaption></figure>
 
-Exams practice is process that helps to:
+Exams practice is a process that helps to:
 
 * outline key concepts
 * improve concentration&#x20;
@@ -60,12 +60,12 @@ It is a good practice to index all the chats here "**4 · XXX Chats with Bard**"
 
 At this point the exam is **already scheduled** and we are a few days to go; we notice that we are a little nervous while studying, just as a Scotsman would be when it is time for "_The Last Drop_".
 
-These lasts days we MUST do the following:
+These lasts days we should do the following:
 
-* Intensify the number of practice tests per day
-* Capture and debug wrong responses
-* Identify concepts still weak&#x20;
+* **Intensify** the number of practice tests per day
+* **Capture and debug** wrong responses
+* Identify **concepts** still **weak**&#x20;
 * Index weak points in "**5 · XXX The Last Drop**" document
-* Review all notes, documents, chats and oficial documentation&#x20;
+* **Review** all notes, documents, chats and oficial documentation&#x20;
 
 Good Luck!
