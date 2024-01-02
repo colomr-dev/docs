@@ -28,7 +28,7 @@ It's time to start doing the firsts **exams practice tests**&#x20;
 
 {% embed url="https://docs.preventa.tech/google/google-cloud/exams-dumps" %}
 
-By taking 5-10 tests, we may understand how short (or far) we are from the **passing score** (around 80%). In this first tests I usually fall into 65-75 % of correct answers, so...&#x20;
+By taking 5-10 tests, we may meter how short (or far) are from the **passing score** (which is around 80%). In these first tests I usually fall into 65-75 % so...&#x20;
 
 <figure><img src="../.gitbook/assets/yoda-png-transparent.png" alt="" width="150"><figcaption><p>Too much to learn I still have</p></figcaption></figure>
 
