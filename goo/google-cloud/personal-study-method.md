@@ -42,11 +42,19 @@ Time to write the document "**2 · XXX Recap**" with better a perspective: at th
 
 ## Flashcards 🃏
 
+Unfortunately, on the exam there are responses that have to be learned by heart. This is a bit stupid and our memory tends to become released in the days following the exam; for this we have "flashcards", a kind of memorisation technique.
 
+Let's write "**3 · XXX Flashcards**" to this values we need to memorise.&#x20;
 
 ## Chats with Bard 🤖
 
+Of course! AI is also part of my learning process. It is useful chat with Bard to clarify certain concepts with natural language rather that seeking information by search engines. &#x20;
 
+{% hint style="info" %}
+Bard is not always right. It is your responsibility to verify all information in case of doubts.
+{% endhint %}
+
+It is a good practice to index all the chats in "**4 · XXX Chats with Bard**"
 
 ## The Last Drop 🍺
 
