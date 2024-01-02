@@ -10,9 +10,9 @@ description: My personal study method to clear Google certification exams
 
 This is a previous stage where I usually do a research on what the certification exam will cover. A good starting points to do so are:
 
-* Read the official **Certification Exam Guide** (CEG) carefully.
-* Read the **most up-to-date book** on the certification we're going to prepare.
-* Explore **GitHub repositories** to find study **materials** and other **resources**.
+* Read the official **Certification Exam Guide** (CEG) carefully
+* Read the **most up-to-date book** on the certification we're going to prepare
+* Explore **GitHub repositories** to find study **materials** and other **resources**
 
 After completing these steps we'll get a high-level overview of the main topics for the exam.
 
@@ -54,7 +54,17 @@ Of course! AI is also part of my learning process. It is useful chat with Bard t
 Bard is not always right. It is your responsibility to verify all information in case of doubts.
 {% endhint %}
 
-It is a good practice to index all the chats in "**4 · XXX Chats with Bard**"
+It is a good practice to index all the chats in "**4 · XXX Chats with Bard**" for later review.
 
 ## The Last Drop 🍺
 
+At this point the exam is **already scheduled** and we are a few days early; we notice that we are a little nervous while studying, just as a Scotsman would be when he hears that it is time for "The Last Drop."
+
+These lasts days we MUST do the following:
+
+* Intensify the number of practice tests per day
+* Identify concepts still weak&#x20;
+* Index weak points in "5 · XXX The Last Drop" document
+* Review all notes, documents, chats and oficial documentation&#x20;
+
+Good Luck!
