@@ -36,33 +36,34 @@ Exams practice is process that helps to:
 
 * outline key concepts
 * improve concentration&#x20;
-* reading comprehension
+* improve reading comprehension
 
-Time to write the document "**2 · XXX Recap**" with better a perspective: at this point we must understand what is, and what is not, important for the "real" exam.&#x20;
+Time to write the document "**2 · XXX Recap**" with a better perspective: at this point we must understand what is, and what is not, important for the "_real_" exam.&#x20;
 
 ## Flashcards 🃏
 
-Unfortunately, on the exam there are responses that have to be learned by heart. This is a bit stupid and our memory tends to become released in the days following the exam; for this we have "flashcards", a kind of memorisation technique.
+Unfortunately, on the exam there are responses that have to be learned by heart. This is a bit stupid,  our memory tends to release memorised information just a few days after; for this we have "flashcards" which is a kind of short-term memo-technique.
 
-Let's write "**3 · XXX Flashcards**" to this values we need to memorise.&#x20;
+Let's write "**3 · XXX Flashcards**" document with those values that we need to memorise.&#x20;
 
 ## Chats with Bard 🤖
 
-Of course! AI is also part of my learning process. It is useful chat with Bard to clarify certain concepts with natural language rather that seeking information by search engines. &#x20;
+Of course! AI is also part of my learning process. I have useful chats with Bard to clarify certain concepts by using natural language rather that seeking information on search engines.
 
 {% hint style="info" %}
 Bard is not always right. It is your responsibility to verify all information in case of doubts.
 {% endhint %}
 
-It is a good practice to index all the chats in "**4 · XXX Chats with Bard**" for later review.
+It is a good practice to index all the chats here "**4 · XXX Chats with Bard**" for a later review.
 
 ## The Last Drop 🍺
 
-At this point the exam is **already scheduled** and we are a few days early; we notice that we are a little nervous while studying, just as a Scotsman would be when he hears that it is time for "The Last Drop."
+At this point the exam is **already scheduled** and we are a few days to go; we notice that we are a little nervous while studying, just as a Scotsman would be when it is time for "_The Last Drop_".
 
 These lasts days we MUST do the following:
 
 * Intensify the number of practice tests per day
+* Capture and debug wrong responses
 * Identify concepts still weak&#x20;
 * Index weak points in "5 · XXX The Last Drop" document
 * Review all notes, documents, chats and oficial documentation&#x20;
