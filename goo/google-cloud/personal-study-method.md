@@ -8,22 +8,22 @@ description: My personal study method to clear Google certification exams
 
 ## From Zero to Hero 🦸‍♂️
 
-This is a previous stage where I usually do a research on what the certification exam will cover. A good starting points to do so are:
+This is a previous stage where I usually do some research on what the certification exam will cover. A good starting points are:
 
-* Read the official **Certification Exam Guide** (CEG) carefully
+* Read carefully the official **Certification Exam Guide** (CEG)&#x20;
 * Read the **most up-to-date book** on the certification to prepare
 * Explore **GitHub repositories** to find study **materials** and other **resources**
 * Open a new GitHub project for **tracking tasks progress**
 
 {% embed url="https://github.com/fcolomer-dev?tab=projects" %}
 
-After completing these steps we'll get a high-level overview of the main topics for the exam.
+After completing above steps, we will get an overview of the main topics for the exam.
 
 ## Key Concepts ✍
 
-Once we identified the main exam topics, it's time to get to work taking the corresponding _Learning Path_ in [**Cloud Skills Boost**](https://www.cloudskillsboost.google/). I suggest not missing any lab on this.
+Once identified the main topics, it's time to take the corresponding _Learning Path_ in [**Cloud Skills Boost**](https://www.cloudskillsboost.google/). I suggest not missing any lab on this.
 
-And just when the Learning Path is done, we're in a good point to write down the documento "**1 · XXX Key Concepts**", this document is an index with the main concepts (and links) to master for the exam.
+When the Learning Path is done, we're in a good point to write down the documento "**1 · XXX Key Concepts**"; this index the main concepts (with links) to dig further.
 
 ## Recap 🔖
 
@@ -31,17 +31,17 @@ It's time to start doing the firsts **exams practice tests**&#x20;
 
 {% embed url="https://docs.preventa.tech/google/google-cloud/exams-dumps" %}
 
-By taking 5-10 tests, we may meter how short (or far) are from the **passing score** (which is around 80%). In these first tests I usually fall into 65-75 % so...&#x20;
+By taking 5-10 tests, we'll meter how short (or far) are from the **passing score** (which is about 80%). In these first batch I usually fall into 65-75 % so...&#x20;
 
 <figure><img src="../.gitbook/assets/yoda-png-transparent.png" alt="" width="150"><figcaption><p>Too much to learn I still have</p></figcaption></figure>
 
 Exams practice is a process that helps to:
 
-* outline key concepts
-* improve concentration&#x20;
-* improve reading comprehension
+* outline key **concepts**
+* improve **concentration**&#x20;
+* improve reading **comprehension**
 
-Time to write the document "**2 · XXX Recap**" with a better perspective: at this point we must understand what is, and what is not, important for the "_real_" exam.&#x20;
+Time to write the document "**2 · XXX Recap**" with a better perspective: at this stage we should know  what is, and what is not, important for the "_real_" exam.&#x20;
 
 ## Flashcards 🃏
 
