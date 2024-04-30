@@ -22,4 +22,4 @@ This study method is based on my personal experience, it is not a general formul
 
 In my Github profile you can find these notes (and download them), the code repositories and the teaching material that I have used to prepare the certification: from books, labs, exam platforms or links to other interesting repositories from other students.
 
-{% embed url="https://github.com/users/fcolomer-dev/projects/1" %}
+{% embed url="https://github.com/users/fcolomr/projects/1" %}
