@@ -2,14 +2,15 @@
 
 * [Readme](README.md)
 
-## ↗ Resources
+## ↗️ Resources
 
 * [Code Beauty](https://codebeautify.org/htmlviewer)
 * [Apache Beam Python SDK (quick-start)](https://beam.apache.org/get-started/quickstart/python/)
 * [Programming model for Apache Beam](https://cloud.google.com/dataflow/docs/concepts/beam-programming-model)
 * [Apache Beam (examples)](https://github.com/apache/beam/tree/master/sdks/python/apache\_beam/examples)
+* [Minikube on Ubuntu 22.04](https://www.linuxbuzz.com/install-minikube-on-ubuntu/)
 
-## ✂ Snippets
+## ✂️ Snippets
 
 * [Dataflow](snippets/dataflow.md)
 
@@ -21,6 +22,6 @@
 
 * [Python for Analysis](python-for-analysis.md)
 
-## ◀ AppSheet
+## ◀️ AppSheet
 
 * [BBDD en AppSheet](appsheet/bbdd-en-appsheet.md)
