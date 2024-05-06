@@ -6,9 +6,12 @@
 
 * [Code Beauty](https://codebeautify.org/htmlviewer)
 * [Minikube on Ubuntu 22.04](https://www.linuxbuzz.com/install-minikube-on-ubuntu/)
-* [Apache Beam Python SDK (quick-start)](https://beam.apache.org/get-started/quickstart/python/)
-* [Programming model for Apache Beam](https://cloud.google.com/dataflow/docs/concepts/beam-programming-model)
-* [Apache Beam (examples)](https://github.com/apache/beam/tree/master/sdks/python/apache\_beam/examples)
+* [Fake Data Generator](https://www.mockaroo.com/)
+* [Load testing tool](https://locust.io/)
+* [🫘 Apache Beam SDK](resources/apache-beam-sdk/README.md)
+  * [Apache Beam Python SDK (quick-start)](https://beam.apache.org/get-started/quickstart/python/)
+  * [Programming model for Apache Beam](https://cloud.google.com/dataflow/docs/concepts/beam-programming-model)
+  * [Apache Beam (examples)](https://github.com/apache/beam/tree/master/sdks/python/apache\_beam/examples)
 
 ## ✂️ Snippets
 
