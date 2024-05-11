@@ -1,2 +1,3 @@
-# ↗️ Resources
+  # docs
+Repository for technical notes
 
