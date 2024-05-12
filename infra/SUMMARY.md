@@ -1,8 +1,10 @@
 # Table of contents
 
-* [Readme](README.md)
+* [↗️ Resources](README.md)
+  * [Zonal vs. Regional vs. Multi-Regional](https://bgiri-gcloud.medium.com/example-architecture-with-zonal-regional-multi-regional-and-global-resources-in-gcp-603882f409ae)
+* [Readme](<README (1).md>)
 
-## 👨💻 HUGO FRAMEWORK <a href="#hugo" id="hugo"></a>
+## 👨‍💻 HUGO FRAMEWORK <a href="#hugo" id="hugo"></a>
 
 * [Host a static site in GCS](howto/host-a-static-site-in-gcs.md)
 * [Deploy Hugo site at Firebase](howto/deploy-hugo-site-at-firebase.md)
