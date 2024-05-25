@@ -11,3 +11,4 @@
 ## 🔎 Vector Search <a href="#vectors" id="vectors"></a>
 
 * [Types of embeddings](vectors/types-of-embeddings.md)
+* [Retrieval methods](vectors/retrieval-methods.md)
