@@ -7,3 +7,7 @@
 ## 🎰 llm
 
 * [LLM cheatsheet](llm/llm-cheatsheet.md)
+
+## 🔎 Vector Search <a href="#vectors" id="vectors"></a>
+
+* [Types of embeddings](vectors/types-of-embeddings.md)
