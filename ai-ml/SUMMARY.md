@@ -4,6 +4,10 @@
   * [Kaggle](https://www.kaggle.com/)
   * [SciKit Learn](https://scikit-learn.org/stable/)
 
+## ☁️ Vertex AI <a href="#vertex" id="vertex"></a>
+
+* [Vertex ML workflow](vertex/vertex-ml-workflow.md)
+
 ## 🎰 llm
 
 * [LLM cheatsheet](llm/llm-cheatsheet.md)
