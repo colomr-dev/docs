@@ -16,3 +16,7 @@
 
 * [Types of embeddings](vectors/types-of-embeddings.md)
 * [Retrieval methods](vectors/retrieval-methods.md)
+
+## 👨‍🔬 Maths
+
+* [Algorithms](maths/algorithms.md)
