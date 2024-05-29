@@ -4,7 +4,6 @@
   * [Kaggle](https://www.kaggle.com/)
   * [SciKit Learn](https://scikit-learn.org/stable/)
   * [LIT](https://pair-code.github.io/lit/documentation/getting\_started.html)
-* [Pageee](pageee.md)
 
 ## ☁️ Vertex AI <a href="#vertex" id="vertex"></a>
 
