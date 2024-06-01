@@ -1,10 +1,11 @@
 # Table of contents
 
 * [↗️ Resources](README.md)
+  * [LIT](https://pair-code.github.io/lit/documentation/getting\_started.html)
   * [Kaggle](https://www.kaggle.com/)
   * [SciKit Learn](https://scikit-learn.org/stable/)
+  * [MLflow Docs](https://mlflow.org/docs/latest/index.html)
   * [Jypyter Notebook](https://jupyter.org/install)
-  * [LIT](https://pair-code.github.io/lit/documentation/getting\_started.html)
 
 ## ☁️ Vertex AI <a href="#vertex" id="vertex"></a>
 
