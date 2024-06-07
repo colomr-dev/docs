@@ -6,6 +6,7 @@
   * [SciKit Learn](https://scikit-learn.org/stable/)
   * [MLflow Docs](https://mlflow.org/docs/latest/index.html)
   * [Jypyter Notebook](https://jupyter.org/install)
+  * [Machine Learning with Python](https://www.kdnuggets.com/beginners-guide-to-machine-learning-with-python?ref=dailydev)
 
 ## ☁️ Vertex AI <a href="#vertex" id="vertex"></a>
 
