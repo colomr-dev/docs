@@ -5,6 +5,7 @@
 ## ↗️ Resources
 
 * [Code Beauty](https://codebeautify.org/htmlviewer)
+* [Google Mesop](https://google.github.io/mesop/getting\_started/installing/)
 * [Minikube on Ubuntu 22.04](https://www.linuxbuzz.com/install-minikube-on-ubuntu/)
 * [Fake Data Generator](https://www.mockaroo.com/)
 * [Load testing tool](https://locust.io/)
