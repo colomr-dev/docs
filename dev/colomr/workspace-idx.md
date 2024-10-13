@@ -1,9 +1,9 @@
 ---
-description: Configuración de IDX para los diferentes proyectos
 icon: dev
+description: Configuración de IDX para el proyecto colomr.dev
 ---
 
-# Google IDX
+# Workspace IDX
 
 {% embed url="https://developers.google.com/idx/guides/get-started" %}
 
