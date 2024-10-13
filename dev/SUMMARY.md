@@ -21,7 +21,7 @@
 ## 🌐 colomr.dev <a href="#colomr" id="colomr"></a>
 
 * [Install Hugo Framework & Coder Theme](colomr/install-hugo-framework-and-coder-theme.md)
-* [Google IDX](colomr/google-idx.md)
+* [Workspace IDX](colomr/workspace-idx.md)
 
 ***
 
