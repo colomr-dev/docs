@@ -27,7 +27,3 @@
 ***
 
 * [Python for Analysis](python-for-analysis.md)
-
-## ◀️ AppSheet
-
-* [BBDD en AppSheet](appsheet/bbdd-en-appsheet.md)
